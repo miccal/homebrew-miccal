@@ -36,5 +36,8 @@ cask 'm-mactex-no-gui' do
                ]
 
   uninstall pkgutil: "org.tug.mactex.texlive#{version.major}",
-            delete:  "/usr/local/texlive/#{version.major}"
+            delete:  [
+                       "/usr/local/texlive/#{version.major}",
+                       "~/Library/texlive/#{version.major}",
+                     ]
 end
