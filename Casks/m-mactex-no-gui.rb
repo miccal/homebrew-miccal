@@ -6,6 +6,8 @@ cask 'm-mactex-no-gui' do
   name 'MacTeX'
   homepage 'https://www.tug.org/mactex/'
 
+  depends_on formula: 'ghostscript'
+
   pkg "mactex-#{version.no_dots}.pkg",
       # installer -showChoicesXML -pkg mactex-#{version.no_dots}.pkg -target /
       choices: [
