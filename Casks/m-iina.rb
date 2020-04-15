@@ -1,4 +1,4 @@
-cask 'm-iina-beta' do
+cask 'm-iina' do
   version '1.0.7-beta2'
   sha256 :no_check
 
