@@ -28,7 +28,7 @@ cask 'm-mactex-no-gui' do
                    'attributeSetting' => 0,
                  },
                  {
-                   # TeXLive
+                   # TeX Live
                    'choiceIdentifier' => "org.tug.mactex.texlive#{version.major}",
                    'choiceAttribute'  => 'selected',
                    'attributeSetting' => 1,
