@@ -7,7 +7,6 @@ cask 'm-vlc' do
   homepage 'https://www.videolan.org/vlc/'
 
   app 'VLC.app'
-  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/vlc.wrapper.sh"
   binary shimscript, target: 'vlc'
 
