@@ -8,16 +8,6 @@ cask 'm-libreoffice' do
   homepage 'https://www.libreoffice.org/'
 
   app 'LibreOffice.app'
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/regmerge"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/regview"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/senddoc"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/ui-previewer"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/uno"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/unoinfo"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/unopkg"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/uri-encode"
-  binary "#{appdir}/LibreOffice.app/Contents/MacOS/xpdfimport"
   shimscript = "#{staged_path}/soffice.wrapper.sh"
   binary shimscript, target: 'soffice'
 
