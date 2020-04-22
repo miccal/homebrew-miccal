@@ -7,5 +7,13 @@ cask 'm-iina' do
   homepage 'https://iina.io/'
 
   app 'IINA.app'
-  binary "#{appdir}/IINA.app/Contents/MacOS/iina-cli", target: 'iina'
+  shimscript = "#{staged_path}/iina-cli.wrapper.sh"
+  binary shimscript, target: 'iina'
+
+  preflight do
+    IO.write shimscript, <<~EOS
+      #!/bin/sh
+      '#{appdir}/IINA.app/Contents/MacOS/iina-cli' "$@"
+    EOS
+  end
 end
