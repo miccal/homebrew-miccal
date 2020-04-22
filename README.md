@@ -5,7 +5,7 @@
 * `m-mactex-no-gui` will install the latest version of `mactex-no-gui` using the AARNet as a mirror.
 * `m-tex-live-utility` will install the latest version (be it a stable release or a beta release) of `tex-live-utility`.
 * `m-tor-browser` will install the latest `en-US`-language version (be it a stable release or an alpha release) of `tor-browser`.
-* `m-vlc` will install the latest available version of `vlc` and the binary `VLC` aliased to the binary `vlc` using the AARNet as a mirror.
+* `m-vlc` will install the latest version of `vlc` and the binary `VLC` aliased to the binary `vlc` using the AARNet as a mirror.
 
 ## How do I install these casks?
 
