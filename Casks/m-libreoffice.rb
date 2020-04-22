@@ -9,7 +9,7 @@ cask 'm-libreoffice' do
 
   app 'LibreOffice.app'
   shimscript = "#{staged_path}/soffice.wrapper.sh"
-  binary shimscript, target: 'soffice'
+  binary shimscript, target: 'libreoffice'
 
   preflight do
     IO.write shimscript, <<~EOS
