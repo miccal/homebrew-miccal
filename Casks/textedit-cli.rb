@@ -1,4 +1,5 @@
 cask 'textedit-cli' do
+  url 'https://github.com/miccal/personal-files/blob/master/uwa_logo.pdf'
   shimscript = "#{staged_path}/textedit.wrapper.sh"
   binary shimscript, target: 'textedit'
 
