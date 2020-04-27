@@ -1,5 +1,5 @@
 cask 'm-vlc' do
-  version '3.0.9.2'
+  version '3.0.10'
   sha256 :no_check
 
   url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}.dmg"
