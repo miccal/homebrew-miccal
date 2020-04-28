@@ -5,7 +5,7 @@ cask 'm-libreoffice' do
   if version.after_comma = stable
     url "https://mirror.aarnet.edu.au/pub/libreoffice/stable/#{version.before_comma}/mac/x86_64/LibreOffice_#{version.before_comma}_MacOS_x86-64.dmg"
   else
-    url "https://mirror.aarnet.edu.au/pub/libreoffice/testing/#{version.before_comma}.#{version.after_comma}/mac/x86_64/LibreOffice_#{version.before_comma}.#{version.after_comma}_MacOS_x86-64.dmg"
+    url "https://mirror.aarnet.edu.au/pub/libreoffice/testing/#{version.before_comma}/mac/x86_64/LibreOffice_#{version.before_comma}.#{version.after_comma}_MacOS_x86-64.dmg"
   end
 
   name 'LibreOffice'
