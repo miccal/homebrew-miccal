@@ -1,4 +1,4 @@
-cask 'm-libreoffice' do
+cask 'm-lib-test' do
   version '6.4.3,stable'
   sha256 :no_check
 
