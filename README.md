@@ -9,7 +9,7 @@
 
 ## How do I install these Casks?
 
-`brew install miccal/miccal/<cask>`
+`brew cask install miccal/miccal/<cask>`
 
 Or `brew tap miccal/miccal` and then `brew cask install <cask>`.
 
