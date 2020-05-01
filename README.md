@@ -7,7 +7,7 @@
 * `m-tor-browser` will install the latest `en-US`-language version (be it a stable release or an alpha release) of `tor-browser`.
 * `m-vlc` will install the latest version of `vlc` and the binary `VLC` aliased to the binary `vlc` using the AARNet as a mirror.
 
-## How do I install these casks?
+## How do I install these Casks?
 
 `brew install miccal/miccal/<cask>`
 
