@@ -1,5 +1,5 @@
 cask 'm-tex-live-utility' do
-  version '1.37b1'
+  version '1.37b3'
   sha256 :no_check
 
   url "https://github.com/amaxwell/tlutility/releases/download/#{version}/TeX.Live.Utility.app-#{version}.dmg"
