@@ -13,7 +13,7 @@ cask 'm-vlc' do
   preflight do
     IO.write shimscript, <<~EOS
       #!/bin/sh
-      exec '#{appdir}/VLC.app/Contents/MacOS/VLC' "$@"
+      '#{appdir}/VLC.app/Contents/MacOS/VLC' "$@"
     EOS
   end
 end
