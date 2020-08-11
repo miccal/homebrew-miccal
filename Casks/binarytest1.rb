@@ -1,5 +1,5 @@
 cask "binarytest1" do
-  version "1"
+  version "2"
   sha256 :no_check
 
   url "https://github.com/miccal/personal-files/blob/master/test"
