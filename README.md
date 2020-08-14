@@ -15,4 +15,4 @@ Or `brew tap miccal/miccal` and then `brew cask install <cask>`.
 
 ## Documentation
 
-`brew cask help`, `man brew-cask` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew help`, `brew cask help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
