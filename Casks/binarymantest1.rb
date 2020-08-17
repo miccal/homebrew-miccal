@@ -6,6 +6,8 @@ cask "binarymantest1" do
   name "binarymantest1"
   homepage "https://github.com/"
 
+  suit "test"
+
   binary "#{staged_path}/test/binarytest"
   manpage "#{staged_path}/test/mantest.1"
 end
