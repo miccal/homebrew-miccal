@@ -8,6 +8,6 @@ cask "binarymantest1" do
 
   suite "test"
 
-  binary "#{appdir}/binarytest"
-  manpage "#{appdir}/mantest.1"
+  binary "#{appdir}/test/binarytest"
+  manpage "#{appdir}/test/mantest.1"
 end
