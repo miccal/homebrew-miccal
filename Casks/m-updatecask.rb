@@ -1,5 +1,5 @@
 cask "m-updatecask" do
-  version "2"
+  version "3"
   sha256 :no_check
 
   url "https://blah.com"
