@@ -5,9 +5,9 @@ class Mzsh < Formula
   sha256 "dcc4b54cc5565670a65581760261c163d720991f0d06486da61f8d839b52de28"
 
   bottle do
-    sha256 "209d04a4d62f6162f1b6cf824d2c50b00b52cb812c04c1967e5b376573b5aef0" => :catalina
-    sha256 "c5c35657637c97132efbaa0fd8e2add568aaa62adfe66e7d19f961f8e9506da9" => :mojave
-    sha256 "029b8c6922f01bfd832dd0f4f940f99328d2495714c37c1dc7ef326d6fb1459e" => :high_sierra
+    sha256 "209d04a4d62f6162f1b6cf824d2c50b00b52cb812c04c1967e5b376573b5aef1" => :catalina
+    sha256 "c5c35657637c97132efbaa0fd8e2add568aaa62adfe66e7d19f961f8e9506da2" => :mojave
+    sha256 "029b8c6922f01bfd832dd0f4f940f99328d2495714c37c1dc7ef326d6fb14593" => :high_sierra
   end
 
   head do
