@@ -1,4 +1,4 @@
-cask "m-newcask1" do
+cask "m-newcask2" do
   version "1"
   sha256 :no_check
 
