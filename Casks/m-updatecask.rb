@@ -4,7 +4,7 @@ cask "m-updatecask" do
 
   url "https://blah.com"
   name "Blah"
-  homepage "https://blah.com"
+  homepage "https://blahblah.com"
 
   app "Blah.app"
 end
