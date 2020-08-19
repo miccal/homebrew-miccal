@@ -1,4 +1,4 @@
-class newformula1 < Formula
+class NewFormula1 < Formula
   desc "m-newformula1"
   homepage "https://blah.com"
   url "https://blah.com"
