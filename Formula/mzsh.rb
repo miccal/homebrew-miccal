@@ -11,7 +11,7 @@ class Mzsh < Formula
   end
 
   head do
-    url "https://git.code.sf.net/p/zsh/code.git"
+    url "https://git.code.sf.net/zsh/code.git"
     depends_on "autoconf" => :build
   end
 
