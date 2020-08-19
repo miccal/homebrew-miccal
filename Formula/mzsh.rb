@@ -1,7 +1,7 @@
 class Mzsh < Formula
   desc "UNIX shell"
   homepage "https://www.zsh.org/"
-  url "https://downloads.sourceforge.net/project/zsh/zsh/5.7/zsh-5.7.tar.xz"
+  url "https://downloads.sourceforge.net/project/zsh/zsh/5.8/zsh-5.8.tar.xz"
   sha256 "dcc4b54cc5565670a65581760261c163d720991f0d06486da61f8d839b52de28"
 
   bottle do
