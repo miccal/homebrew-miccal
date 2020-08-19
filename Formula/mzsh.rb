@@ -2,7 +2,7 @@ class Mzsh < Formula
   desc "UNIX shell"
   homepage "https://www.zsh.org/"
   url "https://downloads.sourceforge.net/project/zsh/zsh/5.7/zsh-5.7.tar.xz"
-  sha256 "dcc4b54cc5565670a65581760261c163d720991f0d06486da61f8d839b52de27"
+  sha256 "dcc4b54cc5565670a65581760261c163d720991f0d06486da61f8d839b52de28"
 
   bottle do
     sha256 "209d04a4d62f6162f1b6cf824d2c50b00b52cb812c04c1967e5b376573b5aef0" => :catalina
