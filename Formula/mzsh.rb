@@ -20,8 +20,8 @@ class Mzsh < Formula
   depends_on "pcre"
 
   resource "htmldoc" do
-    url "https://downloads.sourceforge.net/project/zsh/zsh-doc/5.8/zsh-5.8-doc.tar.xz"
-    mirror "https://www.zsh.org/pub/zsh-5.8-doc.tar.xz"
+    url "https://downloads.sourceforge.net/project/zsh/zsh-doc/5.7/zsh-5.7-doc.tar.xz"
+    mirror "https://www.zsh.org/pub/zsh-5.7-doc.tar.xz"
     sha256 "9b4e939593cb5a76564d2be2e2bfbb6242509c0c56fd9ba52f5dba6cf06fdcc4"
   end
 
