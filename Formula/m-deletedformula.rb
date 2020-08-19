@@ -1,4 +1,4 @@
-class m_deletedformula < Formula
+class deletedformula < Formula
   desc "m-deletedformula"
   homepage "https://blah.com"
   url "https://blah.com"
