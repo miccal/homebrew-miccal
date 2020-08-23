@@ -1,5 +1,5 @@
 cask "m-iina" do
-  version "1.0.7"
+  version "1.0.7test"
   sha256 :no_check
 
   # test2
