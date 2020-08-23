@@ -2,7 +2,7 @@ cask "m-iina" do
   version "1.0.7"
   sha256 :no_check
 
-  # test1
+  # test2
   url "https://dl.iina.io/IINA.v#{version}.dmg"
   name "IINA"
   homepage "https://iina.io/"
