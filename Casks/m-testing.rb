@@ -8,5 +8,5 @@ cask "m-testing" do
   homepage "https://www.dropbox.com/"
 
   app "Dropbox.app", target: "m-testing.app"
-  binary "#{appdir}/Dropbox.app/Contents/MacOS/Dropbox", target: "m-testing"
+  binary "#{appdir}/Dropbox.app/Contents/MacOS/Dropbox", target: "libreoffice"
 end
