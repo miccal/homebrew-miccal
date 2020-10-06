@@ -1,5 +1,5 @@
 cask "m-iina" do
-  version "1.1.0-beta1"
+  version "1.1.0-beta2"
   sha256 :no_check
 
   url "https://dl.iina.io/IINA.v#{version}.dmg"
