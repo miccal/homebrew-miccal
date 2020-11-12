@@ -1,5 +1,5 @@
 cask "m-little-snitch" do
-  version "4.5.2"
+  version "5.0.1"
   sha256 :no_check
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
@@ -7,8 +7,5 @@ cask "m-little-snitch" do
   name "Little Snitch"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
-  container type: :naked
-
-  installer manual: "LittleSnitch-#{version}.dmg"
-  #installer manual: "LittleSnitch-#{version.before_comma}-nightly-(#{version.after_comma}).dmg"
+  app "Little Snitch.app"
 end
