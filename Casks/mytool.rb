@@ -8,7 +8,7 @@ cask 'mytool' do
 
   container type: :naked
 
-  binary "mytool"
+  binary "geekleeg.com"
   postflight do
     suppress_move_to_applications key: 'suppressMoveToApplications'
     set_permissions "#{staged_path}/mytool", '0755'
