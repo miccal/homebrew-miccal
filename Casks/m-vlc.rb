@@ -1,8 +1,8 @@
 cask "m-vlc" do
-  version "3.0.11.1"
+  version "3.0.12"
   sha256 :no_check
 
-  url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}.dmg"
+  url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}-intel64.dmg"
   name "VLC media player"
   homepage "https://www.videolan.org/vlc/"
 
