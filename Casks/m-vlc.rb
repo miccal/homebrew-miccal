@@ -8,6 +8,7 @@ cask "m-vlc" do
 
   livecheck do
     url "https://mirror.aarnet.edu.au/pub/videolan/vlc/?C=M;O=D"
+    strategy :page_match
     regex(/href="(\d+(?:\.\d+)*)/i)
   end
 
