@@ -6,6 +6,14 @@ cask "m-mactex-no-gui" do
   name "MacTeX"
   homepage "https://www.tug.org/mactex/"
 
+  livecheck do
+    url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/"
+    strategy :page_match do |page|
+      match = page.match(/href=.*?mactex-(\d{4})(\d{2})(\d{2})\.pkg/)
+      "#{match[1]}.#{match[2]}#{match[3]}"
+    end
+  end
+
   depends_on formula: "ghostscript"
 
   pkg "mactex-#{version.no_dots}.pkg",
