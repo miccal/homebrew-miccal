@@ -6,6 +6,11 @@ cask "m-vlc" do
   name "VLC media player"
   homepage "https://www.videolan.org/vlc/"
 
+  livecheck do
+    url "https://mirror.aarnet.edu.au/pub/videolan/vlc/?C=M;O=D"
+    regex(/^v?\.?(\d+(?:\.\d+)*)/i)
+  end
+
   app "VLC.app"
   shimscript = "#{staged_path}/vlc.wrapper.sh"
   binary shimscript, target: "vlc"
