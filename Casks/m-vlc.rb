@@ -8,7 +8,7 @@ cask "m-vlc" do
 
   livecheck do
     url "https://mirror.aarnet.edu.au/pub/videolan/vlc/?C=M;O=D"
-    regex(%r{href=.*?/^v?\.?(\d+(?:\.\d+)*)}i)
+    regex(/href="(\d+(?:\.\d+)*)/i)
   end
 
   app "VLC.app"
