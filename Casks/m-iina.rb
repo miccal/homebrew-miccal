@@ -6,6 +6,11 @@ cask "m-iina" do
   name "IINA"
   homepage "https://iina.io/"
 
+  livecheck do
+    url "https://github.com/iina/iina.git"
+    regex(/^v?\.?(\d+(?:\.\d+)*\S*)/i)
+  end
+
   app "IINA.app"
   shimscript = "#{staged_path}/iina-cli.wrapper.sh"
   binary shimscript, target: "iina"
