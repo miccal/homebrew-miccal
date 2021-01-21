@@ -9,6 +9,7 @@ cask "m-iina" do
   livecheck do
     url "https://github.com/iina/iina.git"
     strategy :git
+    regex(/^v?\.?(\d+(?:\.\d+)*\S*)/i)
   end
 
   app "IINA.app"
