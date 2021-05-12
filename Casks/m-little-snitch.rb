@@ -1,5 +1,5 @@
 cask "m-little-snitch" do
-  version "5.2,6197"
+  version "5.2,6199"
   sha256 :no_check
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
