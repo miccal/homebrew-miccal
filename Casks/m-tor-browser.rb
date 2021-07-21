@@ -1,5 +1,5 @@
 cask "m-tor-browser" do
-  version "10.5.2"
+  version "11.0a2"
   sha256 :no_check
 
   url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
