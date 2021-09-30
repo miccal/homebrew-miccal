@@ -18,7 +18,7 @@ cask "m-libreoffice" do
   binary shimscript, target: "libreoffice"
 
   preflight do
-    IO.write shimscript, <<~EOS
+    File.write shimscript, <<~EOS
       #!/bin/sh
       "#{appdir}/LibreOffice.app/Contents/MacOS/soffice" "$@"
     EOS
