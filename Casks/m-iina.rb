@@ -17,7 +17,7 @@ cask "m-iina" do
   binary shimscript, target: "iina"
 
   preflight do
-    IO.write shimscript, <<~EOS
+    File.write shimscript, <<~EOS
       #!/bin/sh
       "#{appdir}/IINA.app/Contents/MacOS/iina-cli" "$@"
     EOS
