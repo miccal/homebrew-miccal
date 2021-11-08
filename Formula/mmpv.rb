@@ -1,4 +1,4 @@
-class m-Mpv < Formula
+class Mmpv < Formula
   desc "Media player based on MPlayer and mplayer2"
   homepage "https://mpv.io"
   url "https://github.com/mpv-player/mpv/archive/v0.33.1.tar.gz"
