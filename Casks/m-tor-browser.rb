@@ -6,5 +6,9 @@ cask "m-tor-browser" do
   name "Tor Browser"
   homepage "https://www.torproject.org/"
 
+  livecheck do
+    skip "Check tor-browser and tor-browser-alpha"
+  end
+
   app "Tor Browser.app"
 end
