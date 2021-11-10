@@ -15,7 +15,11 @@ Or `brew tap miccal/miccal` and then `brew install <cask>`.
 
 ## Why do you have these as separate Formulae?
 
-* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle.
+* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle by adding the following to the end of the `def install` block:
+```
+    system Formula["python@3.9"].opt_bin/"python3", "TOOLS/osxbundle.py", "build/mpv"
+    prefix.install "build/mpv.app"
+```
 
 This may be installed via
 
