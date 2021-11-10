@@ -21,7 +21,7 @@ and then
 
 ## Why do you have these as separate Formulae?
 
-* `m-mpv` will install the `--HEAD` version of `mpv` and generate an app bundle by adding the following lines to the end of the [`def install` block](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/mpv.rb):
+* `m-mpv` will install the `--HEAD` version of `mpv` and generate an app bundle by adding the following lines to the end of the [`def install` block](https://github.com/Homebrew/homebrew-core/blob/master/Formula/mpv.rb):
 ```
     system Formula["python@3.9"].opt_bin/"python3", "TOOLS/osxbundle.py", "build/mpv"
     prefix.install "build/mpv.app"
