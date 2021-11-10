@@ -11,11 +11,17 @@ These may be installed via
 
 `brew install miccal/miccal/<cask>`
 
-Or `brew tap miccal/miccal` and then `brew install <cask>`.
+Alternatively,
+
+`brew tap miccal/miccal`
+
+and then
+
+`brew install <cask>`
 
 ## Why do you have these as separate Formulae?
 
-* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle by adding the following lines to the end of the `def install` block of the `homebrew-core` [`mpv`](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/mpv.rb) Formula:
+* `m-mpv` will install the `--HEAD` version of `mpv` and generate an app bundle by adding the following lines to the end of the [`def install` block](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/mpv.rb):
 ```
     system Formula["python@3.9"].opt_bin/"python3", "TOOLS/osxbundle.py", "build/mpv"
     prefix.install "build/mpv.app"
@@ -29,7 +35,11 @@ and upgraded via
 
 `brew upgrade --fetch-HEAD miccal/miccal/m-mpv`
 
-Or `brew tap miccal/miccal` and then
+Alternatively,
+
+`brew tap miccal/miccal`
+
+and then
 
 `brew install --HEAD m-mpv`
 
