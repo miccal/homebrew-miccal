@@ -7,5 +7,11 @@ cask "m-little-snitch" do
   name "Little Snitch"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
+  livecheck do
+    url "https://obdev.at/products/littlesnitch/download-nightly.html"
+    strategy :page_match
+    regex(%r{href=.*?/LittleSnitch-(.+)\.dmg}i)
+  end
+
   app "Little Snitch.app"
 end
