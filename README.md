@@ -7,11 +7,31 @@
 * `m-tor-browser` will install the latest `en-US`-language version (be it a stable release or an alpha release) of `tor-browser`.
 * `m-vlc` will install the latest version of `vlc` and the binary `VLC` aliased to the binary `vlc` using the AARNet as a mirror.
 
-## How do I install these Casks?
+These may be installed via
 
 `brew install miccal/miccal/<cask>`
 
 Or `brew tap miccal/miccal` and then `brew install <cask>`.
+
+## Why do you have these as separate Formulae?
+
+* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle.
+
+This may be installed via
+
+`brew install --HEAD miccal/miccal/m-mpv`
+
+and upgraded via
+
+`brew upgrade --fetch-HEAD miccal/miccal/m-mpv`
+
+Or `brew tap miccal/miccal` and then
+
+`brew install --HEAD m-mpv`
+
+and
+
+`brew upgrade --fetch-HEAD m-mpv`
 
 ## Documentation
 
