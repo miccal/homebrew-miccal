@@ -1,7 +1,7 @@
 ## Why do you have these as separate Casks?
 
-* `m-libreoffice` will install the latest version (be it a stable release or a release candidate) of `libreoffice` and the binary `soffice` aliased to the binary `libreoffice` using the AARNet (Australian Academic and Research Network) as a mirror. Note that the original `libreoffice-rc` Cask was removed from the `homebrew-cask-versions` repo [via this PR](https://github.com/Homebrew/homebrew-cask-versions/pull/8283).
-* `m-little-snitch` will install the latest version (be it a stable release or a nightly release) of `little-snitch`. Note that the original `little-snitch-nightly` Cask was removed from the `homebrew-cask-versions` repo [via this PR](https://github.com/Homebrew/homebrew-cask-versions/pull/9604).
+* `m-libreoffice` will install the latest version (be it a stable release or a release candidate) of `libreoffice` and the binary `soffice` aliased to the binary `libreoffice` using the AARNet (Australian Academic and Research Network) as a mirror.
+* `m-little-snitch` will install the latest version (be it a stable release or a nightly release) of `little-snitch`.
 * `m-mactex-no-gui` will install the latest version of `mactex-no-gui` using the AARNet as a mirror.
 * `m-tex-live-utility` will install the latest version (be it a stable release or a beta release) of `tex-live-utility`.
 * `m-tor-browser` will install the latest `en-US`-language version (be it a stable release or an alpha release) of `tor-browser`.
@@ -15,7 +15,7 @@ Or `brew tap miccal/miccal` and then `brew install <cask>`.
 
 ## Why do you have these as separate Formulae?
 
-* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle by adding the following to the end of the `def install` block:
+* `m-mpv` will install the `--HEAD` version of mpv and generate an app bundle by adding the following lines to the end of the `def install` block of the `homebrew-core` [`mpv`](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/mpv.rb) Formula:
 ```
     system Formula["python@3.9"].opt_bin/"python3", "TOOLS/osxbundle.py", "build/mpv"
     prefix.install "build/mpv.app"
