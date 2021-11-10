@@ -47,6 +47,12 @@ and
 
 `brew upgrade --fetch-HEAD m-mpv`
 
+Check for new versions of `--HEAD` by running the command
+
+`git ls-remote https://github.com/mpv-player/mpv.git HEAD`
+
+and comparing the commit number with the output of `mpv --version`.
+
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
