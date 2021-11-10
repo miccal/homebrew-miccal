@@ -51,7 +51,9 @@ Check for new versions of `--HEAD` by running the command
 
 `git ls-remote https://github.com/mpv-player/mpv.git HEAD`
 
-and comparing the commit number with the output of `mpv --version`.
+and comparing the commit number with the output of
+
+`brew list m-mpv --version`
 
 ## Documentation
 
