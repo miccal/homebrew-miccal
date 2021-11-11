@@ -35,6 +35,10 @@ and upgraded via
 
 `brew upgrade --fetch-HEAD miccal/miccal/m-mpv`
 
+or
+
+`brew install --fetch-HEAD --HEAD miccal/miccal/m-mpv`
+
 Alternatively,
 
 `brew tap miccal/miccal`
@@ -47,6 +51,10 @@ and
 
 `brew upgrade --fetch-HEAD m-mpv`
 
+or
+
+`brew install --fetch-HEAD --HEAD m-mpv`
+
 Check for new versions of `--HEAD` by running the command
 
 `git ls-remote https://github.com/mpv-player/mpv.git HEAD`
@@ -54,6 +62,10 @@ Check for new versions of `--HEAD` by running the command
 and comparing the commit number with the output of
 
 `brew list m-mpv --version`
+
+Symlink into `/Applications` by running the command
+
+`ln -s -f /usr/local/Cellar/m-mpv/*/mpv.app/ /Applications/mpv`
 
 ## Documentation
 
