@@ -74,11 +74,11 @@ Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/*.dyl
 ```
 when starting `mpv.app`, check the output of
 
-`ls -l /usr/local/Cellar/*/lib/`
+`ls -l /usr/local/Cellar/*/*/lib/`
 
 and run
 
-`ln -s /usr/local/Cellar/*/lib/*.dylib /usr/local/lib/`
+`ln -s /usr/local/Cellar/*/*/lib/*.dylib /usr/local/lib/`
 
 ## Documentation
 
