@@ -67,30 +67,20 @@ Symlink into `/Applications` by running the command
 
 `ln -s -f /usr/local/Cellar/m-mpv/*/mpv.app/ /Applications/mpv`
 
-To fix the errors
+To fix the errors like
 ```
 Dyld Error Message:
-  Library not loaded: @executable_path/lib/libssl.*.dylib
-  Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/libsrt.*.dylib
-  Reason: image not found
-```
-```
-Dyld Error Message:
-  Library not loaded: @executable_path/lib/libcrypto.*.dylib
-  Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/libsrt.*.dylib
+  Library not loaded: @executable_path/lib/*.dylib
+  Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/*.dylib
   Reason: image not found
 ```
 when starting `mpv.app`, check the output of
 
-`ls -l /usr/local/Cellar/openssl@*/*/lib/`
+`ls -l /usr/local/Cellar/*/*/lib/`
 
 and run
 
-`ln -s /usr/local/opt/openssl/lib/libssl.*.dylib /usr/local/lib/`
-
-and
-
-`ln -s /usr/local/opt/openssl/lib/libcrypto.*.dylib /usr/local/lib/`
+`ln -s /usr/local/Cellar/*/*/lib/*.dylib /usr/local/lib/`
 
 ## Documentation
 
