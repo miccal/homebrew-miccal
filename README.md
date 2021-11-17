@@ -69,10 +69,8 @@ Symlink into `/Applications` by running the command
 
 To fix the errors like
 ```
-Dyld Error Message:
-  Library not loaded: @executable_path/lib/*.dylib
-  Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/*.dylib
-  Reason: image not found
+Library not loaded: @executable_path/lib/*.dylib
+Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/*.dylib
 ```
 when starting `mpv.app`, check the output of
 
