@@ -9,7 +9,6 @@ cask "m-little-snitch" do
 
   livecheck do
     url "https://obdev.at/products/littlesnitch/download-nightly.html"
-    strategy :page_match
     regex(%r{href=.*?/LittleSnitch-(.+)\.dmg}i)
   end
 
