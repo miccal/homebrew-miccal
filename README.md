@@ -67,18 +67,18 @@ Symlink into `/Applications` by running the command
 
 `ln -s -f /usr/local/Cellar/m-mpv/*/mpv.app/ /Applications/mpv`
 
-To fix the errors like
+To fix any errors like
 ```
 Library not loaded: @executable_path/lib/*.dylib
 Referenced from: /usr/local/Cellar/m-mpv/HEAD-*/mpv.app/Contents/MacOS/lib/*.dylib
 ```
 when starting `mpv.app`, check the output of
 
-`ls -l /usr/local/Cellar/*/*/lib/`
+`ls -l /usr/local/Cellar/*/lib/`
 
 and run
 
-`ln -s /usr/local/Cellar/*/*/lib/*.dylib /usr/local/lib/`
+`ln -s /usr/local/Cellar/*/lib/*.dylib /usr/local/lib/`
 
 ## Documentation
 
