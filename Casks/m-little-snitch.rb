@@ -17,10 +17,5 @@ cask "m-little-snitch" do
     end
   end
 
-  livecheck do
-    url "https://obdev.at/products/littlesnitch/download-nightly.html"
-    regex(%r{href=.*?/LittleSnitch-(.+)\.dmg}i)
-  end
-
   app "Little Snitch.app"
 end
