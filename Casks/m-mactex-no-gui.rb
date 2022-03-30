@@ -23,13 +23,13 @@ cask "m-mactex-no-gui" do
       choices: [
         {
           # Ghostscript
-          "choiceIdentifier" => "org.tug.mactex.ghostscript9.53.3",
+          "choiceIdentifier" => "org.tug.mactex.ghostscript9.55",
           "choiceAttribute"  => "selected",
           "attributeSetting" => 0,
         },
         {
           # Ghostscript Dynamic Library
-          "choiceIdentifier" => "org.tug.mactex.ghostscript9.53.3libgs",
+          "choiceIdentifier" => "org.tug.mactex.ghostscript9.55-libgs",
           "choiceAttribute"  => "selected",
           "attributeSetting" => 0,
         },
