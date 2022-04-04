@@ -1,5 +1,5 @@
 cask "m-mactex-no-gui" do
-  version "2021.0328"
+  version "2022.0321"
   sha256 :no_check
 
   url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/mactex-#{version.no_dots}.pkg"
