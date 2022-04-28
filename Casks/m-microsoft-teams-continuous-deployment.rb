@@ -10,7 +10,7 @@ cask "m-microsoft-teams-continuous-deployment" do
 
   livecheck do
     url "https://raw.githubusercontent.com/ItzLevvie/MicrosoftTeams-msinternal/master/defconfig"
-    regex(/(\d+(?:\.\d+)+).+osx/i)
+    regex(%r{(\d+(?:\.\d+)+)/Teams[._-]osx\.pkg}i)
   end
 
   pkg "Teams_osx.pkg"
