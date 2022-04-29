@@ -1,5 +1,5 @@
 cask "m-microsoft-teams-continuous-deployment" do
-  version "1.5.00.11767"
+  version "1.5.00.11859"
   sha256 :no_check
 
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg",
