@@ -5,7 +5,6 @@ cask "m-microsoft-teams-canary" do
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg",
       verified: "statics.teams.cdn.office.net/production-osx/"
   name "Microsoft Teams"
-  desc "Meet, chat, call, and collaborate in just one place"
   homepage "https://teams.microsoft.com/downloads"
 
   livecheck do
