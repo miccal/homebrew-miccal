@@ -9,6 +9,7 @@ cask "m-microsoft-teams-canary" do
   homepage "https://teams.microsoft.com/downloads"
 
   livecheck do
+    #url "https://raw.githubusercontent.com/ItzLevvie/MicrosoftTeams-msinternal/master/defconfig"
     url "https://raw.githubusercontent.com/ItzLevvie/MicrosoftTeams-msinternal/master/defconfig2"
     regex(%r{(\d+(?:\.\d+)+)/Teams[._-]osx\.pkg}i)
   end
