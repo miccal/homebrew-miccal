@@ -2,8 +2,7 @@ cask "m-microsoft-teams-canary" do
   version "1.5.00.12553"
   sha256 :no_check
 
-  url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg",
-      verified: "statics.teams.cdn.office.net/production-osx/"
+  url "https://statics.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg"
   name "Microsoft Teams"
   homepage "https://teams.microsoft.com/downloads"
 
@@ -15,7 +14,10 @@ cask "m-microsoft-teams-canary" do
 
   pkg "Teams_osx.pkg"
 
-  uninstall pkgutil:   "com.microsoft.teams",
+  uninstall pkgutil:   [
+    "com.microsoft.MSTeamsAudioDevice",
+    "com.microsoft.teams",
+  ],
             launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
             delete:    [
               "/Library/Logs/Microsoft/Teams",
