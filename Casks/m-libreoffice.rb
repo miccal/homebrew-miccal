@@ -1,9 +1,9 @@
 cask "m-libreoffice" do
-  version "7.3.4"
+  version "7.3.5.1"
   sha256 :no_check
 
-  url "https://mirror.aarnet.edu.au/pub/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
-  #url "https://mirror.aarnet.edu.au/pub/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
+  #url "https://mirror.aarnet.edu.au/pub/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
+  url "https://mirror.aarnet.edu.au/pub/libreoffice/testing/#{version.major_minor_patch}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg"
   name "LibreOffice"
   homepage "https://www.libreoffice.org/"
 
