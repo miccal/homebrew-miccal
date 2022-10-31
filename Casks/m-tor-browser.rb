@@ -3,7 +3,7 @@ cask "m-tor-browser" do
   sha256 :no_check
 
   #url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
-  url "https://www.torproject.org/dist/torbrowser/#{version}/TorBrowser-#{version}-osx64_ALL.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_ALL.dmg"
   name "Tor Browser"
   homepage "https://www.torproject.org/"
 
