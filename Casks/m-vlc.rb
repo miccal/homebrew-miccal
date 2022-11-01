@@ -3,7 +3,7 @@ cask "m-vlc" do
   sha256 :no_check
 
   url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}-intel64.dmg"
-  name "VLC media player"
+  name "VLC"
   homepage "https://www.videolan.org/vlc/"
 
   livecheck do
