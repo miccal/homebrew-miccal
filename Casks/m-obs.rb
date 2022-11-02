@@ -4,7 +4,7 @@ cask "m-obs" do
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-x86_64.dmg"
   name "OBS"
-  homepage "https://obsproject.com/forum/list/test-builds.20/"
+  homepage "https://obsproject.com/"
 
   livecheck do
     skip "Check obs and obs-beta"
