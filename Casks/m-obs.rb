@@ -1,5 +1,5 @@
 cask "m-obs" do
-  version "28.1.1"
+  version "28.1.2"
   sha256 :no_check
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-x86_64.dmg"
