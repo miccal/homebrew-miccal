@@ -1,5 +1,5 @@
 cask "m-microsoft-teams-canary" do
-  version "1.5.00.30662"
+  version "1.5.00.28558"
   sha256 :no_check
 
   url "https://staticsint.teams.cdn.office.net/production-osx/#{version}/Teams_osx.pkg"
