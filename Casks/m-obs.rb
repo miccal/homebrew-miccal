@@ -1,8 +1,10 @@
 cask "m-obs" do
+  arch arm: "arm64", intel: "x86_64"
+
   version "28.1.2"
   sha256 :no_check
 
-  url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-x86_64.dmg"
+  url "https://github.com/obsproject/obs-studio/releases/download/#{version}/obs-studio-#{version}-macos-#{arch}.dmg"
   name "OBS"
   homepage "https://obsproject.com/"
 
