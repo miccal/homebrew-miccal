@@ -1,8 +1,10 @@
 cask "m-vlc" do
+  arch arm: "arm64", intel: "intel64"
+
   version "3.0.17.3"
   sha256 :no_check
 
-  url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}-intel64.dmg"
+  url "https://mirror.aarnet.edu.au/pub/videolan/vlc/#{version}/macosx/vlc-#{version}-#{arch}.dmg"
   name "VLC"
   homepage "https://www.videolan.org/vlc/"
 
