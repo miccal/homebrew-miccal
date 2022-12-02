@@ -1,9 +1,9 @@
 cask "m-tor-browser" do
-  version "11.5.8"
+  version "12.0a5"
   sha256 :no_check
 
-  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
-  #url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_ALL.dmg"
+  #url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-osx64_en-US.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version}/TorBrowser-#{version}-macos_ALL.dmg"
   name "Tor Browser"
   homepage "https://www.torproject.org/"
 
