@@ -3,7 +3,7 @@ cask "m-mpv" do
   sha256 :no_check
 
   url "https://github.com/vitorgalvao/mpv-dummy/releases/download/#{version}/mpv-dummy.zip"
-  name "Mpv"
+  name "mpv"
   homepage "https://mpv.io/"
 
   app "mpv.app"
