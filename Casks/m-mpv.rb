@@ -6,5 +6,7 @@ cask "m-mpv" do
   name "mpv"
   homepage "https://mpv.io/"
 
+  depends_on formula: "mpv"
+
   app "mpv.app"
 end
