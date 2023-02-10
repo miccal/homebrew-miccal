@@ -20,6 +20,7 @@ cask "m-microsoft-teams-canary" do
             ],
             launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
             delete:    [
+              "/Applications/Microsoft Teams.app",
               "/Library/Logs/Microsoft/Teams",
               "/Library/Preferences/com.microsoft.teams.plist",
             ]
