@@ -1,5 +1,5 @@
 cask "m-mactex-no-gui" do
-  version "2022.0321"
+  version "2023.0314"
   sha256 :no_check
 
   url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/mactex-#{version.no_dots}.pkg"
@@ -23,13 +23,13 @@ cask "m-mactex-no-gui" do
       choices: [
         {
           # Ghostscript
-          "choiceIdentifier" => "org.tug.mactex.ghostscript9.55",
+          "choiceIdentifier" => "org.tug.mactex.ghostscript10.00",
           "choiceAttribute"  => "selected",
           "attributeSetting" => 0,
         },
         {
           # Ghostscript Dynamic Library
-          "choiceIdentifier" => "org.tug.mactex.ghostscript9.55-libgs",
+          "choiceIdentifier" => "org.tug.mactex.ghostscript10.00-libgs",
           "choiceAttribute"  => "selected",
           "attributeSetting" => 0,
         },
