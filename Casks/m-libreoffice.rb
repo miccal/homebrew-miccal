@@ -2,7 +2,7 @@ cask "m-libreoffice" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "7.6.1.1"
+  version "7.6.1.2"
   sha256 :no_check
 
   #url "https://mirror.aarnet.edu.au/pub/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
