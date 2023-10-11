@@ -4,7 +4,7 @@ cask "m-microsoft-teams" do
 
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg"
   name "Microsoft Teams"
-  homepage "https://teams.microsoft.com/downloads"
+  homepage "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
 
   livecheck do
     url "https://raw.githubusercontent.com/ItzLevvie/MicrosoftTeams-msinternal/master/defconfig2"
