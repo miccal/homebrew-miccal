@@ -1,5 +1,5 @@
 cask "m-microsoft-teams" do
-  version "23247.720.2421.8365"
+  version "23272.2708.2452.9689"
   sha256 :no_check
 
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg"
@@ -20,5 +20,16 @@ cask "m-microsoft-teams" do
         },
       ]
 
-  uninstall pkgutil: "com.microsoft.teams2"
+  uninstall pkgutil:   [
+              "com.microsoft.MSTeamsAudioDevice",
+              "com.microsoft.teams2",
+            ],
+            launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
+            delete:    [
+              "/Applications/Microsoft Teams (work or school).app",
+              "/Library/Application Support/Microsoft/TeamsUpdaterDaemon",
+              "/Library/Logs/Microsoft/Teams",
+              "/Library/Logs/Microsoft/MSTeams",
+              "/Library/Preferences/com.microsoft.teams.plist",
+            ]
 end
