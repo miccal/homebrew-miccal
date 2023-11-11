@@ -2,7 +2,8 @@ cask "m-microsoft-teams" do
   version "23285.3805.2505.9215"
   sha256 :no_check
 
-  url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg"
+  url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg",
+      user_agent: :fake
   name "Microsoft Teams"
   homepage "https://www.microsoft.com/en/microsoft-teams/group-chat-software/"
 
