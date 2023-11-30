@@ -25,12 +25,5 @@ cask "m-microsoft-teams" do
               "com.microsoft.MSTeamsAudioDevice",
               "com.microsoft.teams2",
             ],
-            launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
-            delete:    [
-              "/Applications/Microsoft Teams (work or school).app",
-              "/Library/Application Support/Microsoft/TeamsUpdaterDaemon",
-              "/Library/Logs/Microsoft/Teams",
-              "/Library/Logs/Microsoft/MSTeams",
-              "/Library/Preferences/com.microsoft.teams.plist",
-            ]
+            launchctl: "com.microsoft.teams.TeamsUpdaterDaemon"
 end
