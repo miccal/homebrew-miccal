@@ -19,7 +19,7 @@ cask "m-mactex-no-gui" do
   depends_on formula: "ghostscript"
 
   pkg "mactex-#{version.no_dots}.pkg",
-      # installer -showChoicesXML -pkg mactex-#{version.no_dots}.pkg -target /
+      # installer -showChoicesXML -pkg filename.pkg -target /
       choices: [
         {
           # Ghostscript
