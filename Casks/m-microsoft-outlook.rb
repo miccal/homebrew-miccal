@@ -12,6 +12,7 @@ cask "m-microsoft-outlook" do
   end
 
   pkg "Microsoft_Outlook_#{version}_Installer.pkg",
+      # installer -showChoicesXML -pkg filename.pkg -target /
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.autoupdate",
