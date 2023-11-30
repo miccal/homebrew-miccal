@@ -12,6 +12,7 @@ cask "m-microsoft-teams" do
   end
 
   pkg "MicrosoftTeams.pkg",
+      # installer -showChoicesXML -pkg filename.pkg -target /
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.autoupdate",
