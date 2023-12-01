@@ -7,7 +7,7 @@ cask "m-tor-browser" do
   homepage "https://www.torproject.org/"
 
   livecheck do
-    skip "Check https://archive.torproject.org/tor-package-archive/torbrowser/?C=M;O=D and https://dist.torproject.org/torbrowser/?C=M;O=A"
+    skip "Check https://archive.torproject.org/tor-package-archive/torbrowser/?C=M;O=D and https://dist.torproject.org/torbrowser/?C=M;O=D"
   end
 
   app "Tor Browser.app"
