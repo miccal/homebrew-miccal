@@ -18,6 +18,4 @@ cask "m-obs" do
       exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
     EOS
   end
-
-  uninstall delete: "/Library/CoreMediaIO/Plug-Ins/DAL/obs-mac-virtualcam.plugin"
 end
