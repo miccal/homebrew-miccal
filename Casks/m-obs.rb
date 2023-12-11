@@ -1,4 +1,4 @@
-cask "obs-beta" do
+cask "m-obs" do
   arch arm: "Apple", intel: "Intel"
 
   version "30.0.2"
