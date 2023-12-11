@@ -7,6 +7,7 @@
 * `m-microsoft-outlook` will install the latest version of Microsoft Outlook without the dependency on `microsoft-auto-update`.
 * `m-microsoft-teams` will install the latest "Public (R4) build" version of Microsoft Teams 2.1 without the dependency on `microsoft-auto-update`.
 * `m-mpv` will install `mpv` from `homebrew-core` with an `.app` bundle built and maintained by Vítor Galvão (https://github.com/vitorgalvao).
+* `m-obs` will install the latest version (be it a stable release, a release candidate or a beta release) of `obs`.
 * `m-tex-live-utility` will install the latest version (be it a stable release or a beta release) of `tex-live-utility`.
 * `m-tor-browser` will install the latest version (be it a stable release or an alpha release) of `tor-browser`.
 
