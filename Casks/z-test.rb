@@ -2,13 +2,9 @@ cask "z-test" do
   version :latest
   sha256 :no_check
 
-  url ""
+  url "https://github.com/lacework/lacework-vulnerability-scanner/releases/download/v0.23.2/lw-scanner-darwin-amd64"
   name "Test"
   homepage "http://www.paperstreetsoap.company/"
-
-  livecheck do
-    url 
-  end
 
   app "Test.app"
 end
