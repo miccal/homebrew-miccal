@@ -1,8 +1,8 @@
 cask "z-test" do
-  version ""
+  version :latest
   sha256 :no_check
 
-  url ""
+  url "https://download.ro.am/Roam/8a86d88cfc9da3551063102e9a4e2a83/latest/darwin/arm64/Roam.dmg"
   name "Test"
   homepage "http://www.paperstreetsoap.company/"
 
