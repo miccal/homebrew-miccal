@@ -1,25 +1,12 @@
 cask "z-test" do
-  version "2.0.3,412"
-  sha256 "0c1e5cad1df94400bb2111599e8fd6610a2f7ec300bb2ece8df396b896d2b4ab"
+  arch arm: "", intel: ""
 
-  url "https://opencat.app/releases/OpenCat-#{version.csv.first}.#{version.csv.second}.dmg"
-  name "OpenCat"
-  desc "Native AI chat client"
-  homepage "https://opencat.app/"
+  version ""
+  sha256 :no_check
 
-  livecheck do
-    url "https://opencat.app/releases/versions.xml"
-    strategy :sparkle
-  end
+  url ""
+  name "Test"
+  homepage "http://www.paperstreetsoap.company/"
 
-  depends_on macos: ">= :ventura"
-
-  app "OpenCat.app"
-
-  zap trash: [
-    "~/Library/Application Scripts/tech.baye.OpenCat",
-    "~/Library/Containers/tech.baye.OpenCat",
-    "~/Library/Group Containers/group.tech.baye.openai",
-    "~/Library/Saved Application State/tech.baye.OpenCat.savedState",
-  ]
+  app "Test.app"
 end
