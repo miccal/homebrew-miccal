@@ -1,10 +1,8 @@
 cask "z-test" do
-  arch arm: "", intel: ""
-
-  version ""
+  version "5.0.0"
   sha256 :no_check
 
-  url ""
+  url "https://github.com/wakatime/macos-wakatime/releases/download/v#{version}/macos-wakatime.zip"
   name "Test"
   homepage "http://www.paperstreetsoap.company/"
 
