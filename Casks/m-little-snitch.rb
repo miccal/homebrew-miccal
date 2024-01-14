@@ -1,5 +1,5 @@
 cask "m-little-snitch" do
-  version "5.7.2"
+  version "5.7.3"
   sha256 :no_check
 
   # Stable:
