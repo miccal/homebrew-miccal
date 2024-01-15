@@ -7,8 +7,7 @@ cask "m-microsoft-teams" do
   homepage "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
 
   livecheck do
-    url "https://raw.githubusercontent.com/ItzLevvie/MicrosoftTeams-msinternal/master/defconfig2"
-    regex(%r{Public\s\(R4\)\sbuild.+(?:\n+.+)+osx/(\d+(?:\.\d+)+)/MicrosoftTeams\.pkg}i)
+    cask "microsoft-teams"
   end
 
   pkg "MicrosoftTeams.pkg",
