@@ -13,5 +13,5 @@ cask "m-tor-browser" do
   # Stable:
   #app "Tor Browser.app"
   # Alpha:
-  app "Tor Browser Alpha.app"
+  app "Tor Browser Alpha.app", target: "Tor Browser.app"
 end
