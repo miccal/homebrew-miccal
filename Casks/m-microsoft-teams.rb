@@ -20,9 +20,9 @@ cask "m-microsoft-teams" do
         },
       ]
 
-  uninstall pkgutil:   [
+  uninstall launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
+            pkgutil:   [
               "com.microsoft.MSTeamsAudioDevice",
               "com.microsoft.teams2",
-            ],
-            launchctl: "com.microsoft.teams.TeamsUpdaterDaemon"
+            ]
 end
