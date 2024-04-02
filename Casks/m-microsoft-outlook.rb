@@ -7,8 +7,7 @@ cask "m-microsoft-outlook" do
   homepage "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-business"
 
   livecheck do
-    url "https://go.microsoft.com/fwlink/p/?linkid=525137"
-    strategy :header_match
+    cask "microsoft-outlook"
   end
 
   pkg "Microsoft_Outlook_#{version}_Installer.pkg",
