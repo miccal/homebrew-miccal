@@ -7,13 +7,7 @@ cask "m-mactex-no-gui" do
   homepage "https://www.tug.org/mactex/"
 
   livecheck do
-    url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/"
-    strategy :page_match do |page|
-      match = page.match(/href=.*?mactex[._-](\d{4})(\d{4})\.pkg/)
-      next if match.blank?
-
-      "#{match[1]}.#{match[2]}"
-    end
+    cask "mactex"
   end
 
   depends_on formula: "ghostscript"
