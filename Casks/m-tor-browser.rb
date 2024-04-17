@@ -1,5 +1,5 @@
 cask "m-tor-browser" do
-  version "13.5a6"
+  version "13.0.14"
   sha256 :no_check
 
   url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version}/tor-browser-macos-#{version}.dmg"
@@ -11,7 +11,7 @@ cask "m-tor-browser" do
   end
 
   # Stable:
-  #app "Tor Browser.app"
+  app "Tor Browser.app"
   # Alpha:
-  app "Tor Browser Alpha.app", target: "Tor Browser.app"
+  #app "Tor Browser Alpha.app", target: "Tor Browser.app"
 end
