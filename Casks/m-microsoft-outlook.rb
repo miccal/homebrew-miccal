@@ -1,5 +1,5 @@
 cask "m-microsoft-outlook" do
-  version "16.83.24031120"
+  version "16.84.24041420"
   sha256 :no_check
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_#{version}_Installer.pkg"
