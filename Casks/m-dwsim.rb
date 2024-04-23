@@ -2,7 +2,7 @@ cask "m-dwsim" do
   version "8.7.1"
   sha256 :no_check
 
-  url "https://downloads.sourceforge.net/project/dwsim/DWSIM/DWSIM%20#{version.major.minor}/#{version}/DWSIM%20#{version}.dmg"
+  url "https://downloads.sourceforge.net/project/dwsim/DWSIM/DWSIM%20#{version.major_minor}/#{version}/DWSIM%20#{version}.dmg"
   name "DWSIM"
   homepage "https://dwsim.org/"
 
