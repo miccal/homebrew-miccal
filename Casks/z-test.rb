@@ -6,5 +6,10 @@ cask "z-test" do
   name "Test"
   homepage "http://www.paperstreetsoap.company/"
 
+ livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "Test.app"
 end
