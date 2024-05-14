@@ -2,10 +2,7 @@ cask "m-little-snitch" do
   version "5.7.4"
   sha256 :no_check
 
-  # Stable:
-  url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
-  # Nightly:
-  #url "https://obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version.csv.first}-nightly-(#{version.csv.second}).dmg"
+  url "https://obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version.csv.first}#{version.csv.second}.dmg"
   name "Little Snitch"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
