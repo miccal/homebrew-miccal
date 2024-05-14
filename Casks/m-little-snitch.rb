@@ -17,7 +17,7 @@ cask "m-little-snitch" do
         match = item.next_element&.text&.match(regex)
         next if match.blank?
 
-        "#{match[1]},#{match[3]}"
+        "#{match[1]},#{match[2]}"
       end
     end
   end
