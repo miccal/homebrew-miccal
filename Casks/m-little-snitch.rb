@@ -10,12 +10,15 @@ cask "m-little-snitch" do
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
   livecheck do
-    url "https://obdev.at/products/littlesnitch/download-nightly.html"
-    strategy :page_match do |page|
-      match = page.match(/LittleSnitch[._-](\d+(?:\.\d+)+)([._-]nightly[._-]\((\d+)\))?\.dmg/i)
-      next if match.blank?
+    url "https://sw-update.obdev.at/update-feeds/littlesnitch#{version.major}.plist"
+    regex(/LittleSnitch[._-]v?(\d+(?:\.\d+)+)([._-]nightly[._-]\((\d+)\))?\.dmg/)
+    strategy :xml do |xml, regex|
+      xml.get_elements("//key[text()='DownloadURL']").map do |item|
+        match = item.next_element&.text&.match(regex)
+        next if match.blank?
 
-      "#{match[1]},#{match[3]}"
+        "#{match[1]},#{match[3]}"
+      end
     end
   end
 
