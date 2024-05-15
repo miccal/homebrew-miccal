@@ -1,11 +1,11 @@
 cask "m-little-snitch" do
-  version "5.7.4,6300"
+  version "5.7.5"
   sha256 :no_check
 
   # Stable:
-  #url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/LittleSnitch-#{version}.dmg"
+  url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/LittleSnitch-#{version}.dmg"
   # Nightly:
-  url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/nightly/LittleSnitch-#{version.csv.first}-nightly-(#{version.csv.second}).dmg"
+  #url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/nightly/LittleSnitch-#{version.csv.first}-nightly-(#{version.csv.second}).dmg"
   name "Little Snitch"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
