@@ -15,11 +15,11 @@ cask "m-little-snitch" do
     strategy :xml do |xml, regex|
       xml.get_elements("//key[text()='DownloadURL']").map do |item|
         match = item.next_element&.text&.match(regex)
-          if match[3].blank?
-            match[1]
-          else
-            "#{match[1]},#{match[3]}"
-          end
+        if match[3].blank?
+          match[1]
+        else
+          "#{match[1]},#{match[3]}"
+        end
       end
     end
   end
