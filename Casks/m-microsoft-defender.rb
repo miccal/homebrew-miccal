@@ -4,7 +4,7 @@ cask "m-microsoft-defender" do
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Defender_#{version}_Individuals_Installer.pkg"
   name "Microsoft Defender"
-  homepage "https://www.microsoft.com/security/"
+  homepage "https://www.microsoft.com/en-au/microsoft-365/microsoft-defender-for-individuals"
 
   livecheck do
     url "https://aka.ms/MacDefender"
