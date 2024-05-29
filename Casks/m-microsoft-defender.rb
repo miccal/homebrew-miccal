@@ -8,7 +8,7 @@ cask "m-microsoft-defender" do
 
   livecheck do
     url "https://aka.ms/MacDefender"
-    strategy :extract_plist
+    strategy :header_match
   end
 
   pkg "Microsoft_Defender_#{version}_Individuals_Installer.pkg",
