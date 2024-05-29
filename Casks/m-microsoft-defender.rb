@@ -28,5 +28,6 @@ cask "m-microsoft-defender" do
               "com.microsoft.dlp.agent",
               "com.microsoft.dlp.daemon",
               "com.microsoft.dlp.ux",
+              "com.microsoft.wdav",
             ]
 end
