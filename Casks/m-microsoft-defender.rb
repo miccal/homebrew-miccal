@@ -12,6 +12,7 @@ cask "m-microsoft-defender" do
   end
 
   pkg "Microsoft_Defender_#{version}_Individuals_Installer.pkg",
+      # installer -showChoicesXML -pkg filename.pkg -target /
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.package.Microsoft_AutoUpdate.app",
