@@ -9,7 +9,7 @@ cask "z-test" do
 
   livecheck do
     url :url
-    regex(/^(\d+(?:\.\d+)+)/i)
+    regex(/WindTerm_(\d+(?:\.\d+)+)/i)
     strategy :github_latest do |item, regex|
       version = item["tag_name"][regex, 1]
       next if version.blank?
