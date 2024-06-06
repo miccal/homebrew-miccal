@@ -10,7 +10,7 @@ cask "z-test" do
   livecheck do
     url :url
     strategy :github_latest do |item|
-      "#{item["tag_name"]},#{item["tag_name"]}"
+      "#{item["name"]},#{item["tag_name"]}"
     end
   end
 
