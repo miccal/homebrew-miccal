@@ -12,7 +12,7 @@ cask "m-tor-browser" do
       match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2})/i)
       next if match.blank?
 
-      "#{match[1]},#{match[2]}"
+      "#{match[2]},#{match[1]}"
     end
   end
 
