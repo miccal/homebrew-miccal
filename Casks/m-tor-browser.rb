@@ -8,7 +8,7 @@ cask "m-tor-browser" do
 
   livecheck do
     url "https://dist.torproject.org/torbrowser/?C=M;O=D"
-    regex(/(\d+(?:.\d+)+).*\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}/i)
+    regex(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2})/i)
   end
 
   # Stable:
