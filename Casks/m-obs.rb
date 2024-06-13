@@ -8,6 +8,11 @@ cask "m-obs" do
   name "OBS"
   homepage "https://obsproject.com/"
 
+  livecheck do
+    url :url
+    regex(/v?(\d+(?:[.-]\d+)+(?:(?:-beta\d+)|(?:-rc\d+))?)/i)
+  end
+
   app "OBS.app"
   shimscript = "#{staged_path}/obs.wrapper.sh"
   binary shimscript, target: "obs"
