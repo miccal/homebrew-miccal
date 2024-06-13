@@ -2,7 +2,7 @@ cask "m-tor-browser" do
   version "13.0.16"
   sha256 :no_check
 
-  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.scv.second}/tor-browser-macos-#{version.scv.second}.dmg"
+  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
   name "Tor Browser"
   homepage "https://www.torproject.org/"
 
