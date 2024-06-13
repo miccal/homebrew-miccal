@@ -9,10 +9,10 @@ cask "m-tor-browser" do
   livecheck do
     url "https://dist.torproject.org/torbrowser/?C=M;O=D"
     strategy :page_match do |page|
-      match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2})/i)
+      match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2})/i)
       next if match.blank?
 
-      "#{match[2]},#{match[1]}"
+      "#{match[2].tr("-",".")},#{match[3].tr(":",".")},#{match[1]}"
     end
   end
 
