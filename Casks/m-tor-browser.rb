@@ -1,5 +1,5 @@
 cask "m-tor-browser" do
-  version "13.0.16"
+  version "2024.06.11.18.42,13.0.16"
   sha256 :no_check
 
   url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
@@ -7,7 +7,7 @@ cask "m-tor-browser" do
   homepage "https://www.torproject.org/"
 
   livecheck do
-    url "https://dist.torproject.org/torbrowser/?C=M;O=D"
+    url "https://dist.torproject.org/torbrowser/"
     strategy :page_match do |page|
       match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2})/i)
       next if match.blank?
