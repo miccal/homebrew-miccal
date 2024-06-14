@@ -18,15 +18,12 @@ cask "m-libreoffice" do
     url "https://download.documentfoundation.org/libreoffice/testing/"
     regex(/"LibreOffice(?:Dev)[._-](.+)[._-]MacOS[._-]#{arch}\.dmg"/i)
     strategy :page_match do |page, regex|
-      # Find version.major_minor_patch
       version = page.scan(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
                     .flatten
                     .uniq
                     .map { |v| Version.new(v) }
                     .sort
       next if version.blank?
-
-      # Assume the last-sorted version is newest
 
       path = version.last.to_s.concat("/mac/#{folder}/".to_s)
       next if path.blank?
