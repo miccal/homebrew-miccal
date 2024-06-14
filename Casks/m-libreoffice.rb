@@ -28,7 +28,7 @@ cask "m-libreoffice" do
 
       # Fetch the page for the newest year directory
       newest_year = years.last.to_s
-      year_page = Homebrew::Livecheck::Strategy.page_content(URI.join(@url, newest_year, mac, aarch64).to_s)
+      year_page = Homebrew::Livecheck::Strategy.page_content(URI.join(@url, newest_year, 'mac', 'aarch64').to_s)
       next if year_page[:content].blank?
 
       # Match version from source tarball filenames
