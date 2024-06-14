@@ -16,7 +16,26 @@ cask "m-libreoffice" do
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
-    regex(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
+    regex(/"LibreOffice(?:Dev)[._-](.+)[._-]MacOS[._-]#{arch}\.dmg"/i)
+    strategy :page_match do |page, regex|
+      # Find version.major_minor_patch
+      version = page.scan(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
+                    .flatten
+                    .uniq
+                    .map { |v| Version.new(v) }
+                    .sort
+      next if version.blank?
+
+      # Assume the last-sorted version is newest
+
+      path = version.last.to_s.concat("/mac/#{folder}/".to_s)
+      next if path.blank?
+
+      page = Homebrew::Livecheck::Strategy.page_content(URI.join(@url, path).to_s)
+      next if page[:content].blank?
+
+      page[:content].scan(regex).flatten
+    end
   end
 
   # Stable, RC:
