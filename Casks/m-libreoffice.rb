@@ -16,7 +16,7 @@ cask "m-libreoffice" do
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
-    regex(/(\d+(?:\.\d+)+)\.beta1[._-]MacOS[._-]#{arch}\.dmg/i)
+    regex(/(.*)[._-]MacOS[._-]#{arch}\.dmg/i)
     strategy :page_match do |page, regex|
       # Match years from directories
       years = page.scan(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
