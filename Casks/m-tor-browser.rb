@@ -12,12 +12,12 @@ cask "m-tor-browser" do
       match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2})/i)
       next if match.blank?
 
-      "#{match[2].tr("-",".")}.#{match[3].tr(":",".")},#{match[1]}"
+      "#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")},#{match[1]}"
     end
   end
 
   # Stable:
   app "Tor Browser.app"
   # Alpha:
-  #app "Tor Browser Alpha.app", target: "Tor Browser.app"
+  # app "Tor Browser Alpha.app", target: "Tor Browser.app"
 end
