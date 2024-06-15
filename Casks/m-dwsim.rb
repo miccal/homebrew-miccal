@@ -9,8 +9,8 @@ cask "m-dwsim" do
   homepage "https://dwsim.org/"
 
   livecheck do
-    url "https://github.com/DanWBR/dwsim/releases/"
-    strategy :github_latest
+    url "https://sourceforge.net/projects/dwsim/rss?path=/DWSIM"
+    regex(%r{url=.*?/DWSIM(?:[._-]|%20)v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 
   app "DWSIM.app"
