@@ -4,8 +4,10 @@ cask "m-obs" do
   version "30.2.0-beta3"
   sha256 :no_check
 
-  url "https://github.com/obsproject/obs-studio/releases/download/#{version}/OBS-Studio-#{version}-macOS-#{arch}.dmg"
+  url "https://github.com/obsproject/obs-studio/releases/download/#{version}/OBS-Studio-#{version}-macOS-#{arch}.dmg",
+      verified: "github.com/obsproject/obs-studio/"
   name "OBS"
+  desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/"
 
   livecheck do

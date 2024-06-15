@@ -4,6 +4,7 @@ cask "m-tor-browser" do
 
   url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
   name "Tor Browser"
+  desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
 
   livecheck do
@@ -15,6 +16,8 @@ cask "m-tor-browser" do
       "#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")},#{match[1]}"
     end
   end
+
+  depends_on macos: ">= :sierra"
 
   # Stable:
   app "Tor Browser.app"

@@ -4,6 +4,7 @@ cask "m-microsoft-outlook" do
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_#{version}_Installer.pkg"
   name "Microsoft Outlook"
+  desc "Email client"
   homepage "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-business"
 
   livecheck do

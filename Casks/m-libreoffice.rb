@@ -10,8 +10,10 @@ cask "m-libreoffice" do
   # RC:
   # url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
   # Dev:
-  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOfficeDev_#{version}_MacOS_#{arch}.dmg"
+  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOfficeDev_#{version}_MacOS_#{arch}.dmg",
+      verified: "download.documentfoundation.org/libreoffice/"
   name "LibreOffice"
+  desc "Free cross-platform office suite"
   homepage "https://www.libreoffice.org/"
 
   livecheck do
@@ -34,6 +36,8 @@ cask "m-libreoffice" do
       page[:content].scan(regex).flatten
     end
   end
+
+  depends_on macos: ">= :big_sur"
 
   # Stable, RC:
   # app "LibreOffice.app"

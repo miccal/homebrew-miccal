@@ -2,8 +2,10 @@ cask "m-dwsim" do
   version "8.7.1"
   sha256 :no_check
 
-  url "https://downloads.sourceforge.net/project/dwsim/DWSIM/DWSIM%20#{version.major_minor}/#{version}/DWSIM%20#{version}.dmg"
+  url "https://downloads.sourceforge.net/dwsim/DWSIM%20#{version}.dmg",
+      verified: "downloads.sourceforge.net/dwsim/"
   name "DWSIM"
+  desc "Chemical process simulator"
   homepage "https://dwsim.org/"
 
   livecheck do
