@@ -8,6 +8,11 @@ cask "m-mpv" do
   desc "Media player based on MPlayer and mplayer2"
   homepage "https://mpv.io/"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on formula: "mpv"
 
   app "mpv.app"
