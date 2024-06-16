@@ -8,8 +8,6 @@ cask "m-obs" do
   name "OBS"
   homepage "https://obsproject.com/"
 
-  # This cask uses both stable and unstable releases, so we use a `strategy`
-  # block to override the `GithubReleases` strategy's pre-release filtering.
   livecheck do
     url :url
     strategy :github_releases do |json|
