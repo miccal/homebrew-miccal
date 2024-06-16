@@ -4,7 +4,6 @@ cask "m-tex-live-utility" do
 
   url "https://github.com/amaxwell/tlutility/releases/download/#{version}/TeX.Live.Utility.app-#{version}.zip"
   name "TeX Live Utility"
-  desc "Graphical user interface for TeX Live Manager"
   homepage "https://github.com/amaxwell/tlutility"
 
   # This cask uses both stable and unstable releases, so we use a `strategy`
