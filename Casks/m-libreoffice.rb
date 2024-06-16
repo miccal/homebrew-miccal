@@ -6,37 +6,40 @@ cask "m-libreoffice" do
   sha256 :no_check
 
   # Stable:
-  #url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
+  # url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
   # RC:
-  #url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
+  # url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
   # Dev:
-  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOfficeDev_#{version}_MacOS_#{arch}.dmg"
+  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOfficeDev_#{version}_MacOS_#{arch}.dmg",
+      verified: "download.documentfoundation.org/libreoffice/"
   name "LibreOffice"
+  desc "Free cross-platform office suite"
   homepage "https://www.libreoffice.org/"
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
-    regex(/"LibreOffice(?:Dev)[._-](.+)[._-]MacOS[._-]#{arch}\.dmg"/i)
+    regex(/href=.*?LibreOffice(?:Dev)?[._-]v?(.+?)[._-]MacOS[._-]#{arch}\.dmg/i)
     strategy :page_match do |page, regex|
-      version = page.scan(%r{href=["']v?(\d+(?:\.\d+)+)/?["' >]}i)
-                    .flatten
-                    .uniq
-                    .map { |v| Version.new(v) }
-                    .sort
-      next if version.blank?
+      versions = page.scan(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
+                     .flatten
+                     .uniq
+                     .map { |v| Version.new(v) }
+                     .sort
+      next if versions.blank?
 
-      path = version.last.to_s.concat("/mac/#{folder}/".to_s)
-      next if path.blank?
-
-      page = Homebrew::Livecheck::Strategy.page_content(URI.join(@url, path).to_s)
+      page = Homebrew::Livecheck::Strategy.page_content(
+        URI.join(@url, "#{versions.last}/mac/#{folder}/").to_s,
+      )
       next if page[:content].blank?
 
       page[:content].scan(regex).flatten
     end
   end
 
+  depends_on macos: ">= :big_sur"
+
   # Stable, RC:
-  #app "LibreOffice.app"
+  # app "LibreOffice.app"
   # Dev:
   app "LibreOfficeDev.app", target: "LibreOffice.app"
   shimscript = "#{staged_path}/soffice.wrapper.sh"

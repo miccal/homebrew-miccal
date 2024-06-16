@@ -5,8 +5,9 @@ cask "m-little-snitch" do
   # Stable:
   url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/LittleSnitch-#{version}.dmg"
   # Nightly:
-  #url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/nightly/LittleSnitch-#{version.csv.first}-nightly-(#{version.csv.second}).dmg"
+  # url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch/nightly/LittleSnitch-#{version.csv.first}-nightly-(#{version.csv.second}).dmg"
   name "Little Snitch"
+  desc "Host-based application firewall"
   homepage "https://www.obdev.at/products/littlesnitch/index.html"
 
   livecheck do
@@ -23,6 +24,8 @@ cask "m-little-snitch" do
       end
     end
   end
+
+  depends_on macos: ">= :sonoma"
 
   app "Little Snitch.app"
 end
