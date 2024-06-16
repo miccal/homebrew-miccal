@@ -34,8 +34,6 @@ cask "m-libreoffice" do
     end
   end
 
-  depends_on macos: ">= :big_sur"
-
   # Stable, RC:
   #app "LibreOffice.app"
   # Dev:
