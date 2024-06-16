@@ -2,10 +2,8 @@ cask "m-microsoft-teams" do
   version "24124.1412.2911.3341"
   sha256 :no_check
 
-  url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg",
-      verified: "statics.teams.cdn.office.net/"
+  url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg"
   name "Microsoft Teams"
-  desc "Meet, chat, call, and collaborate in just one place"
   homepage "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
 
   livecheck do
