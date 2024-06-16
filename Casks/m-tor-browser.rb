@@ -4,7 +4,6 @@ cask "m-tor-browser" do
 
   url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
   name "Tor Browser"
-  desc "Web browser focusing on security"
   homepage "https://www.torproject.org/"
 
   livecheck do
@@ -23,5 +22,5 @@ cask "m-tor-browser" do
   # Stable:
   app "Tor Browser.app"
   # Alpha:
-  # app "Tor Browser Alpha.app", target: "Tor Browser.app"
+  #app "Tor Browser Alpha.app", target: "Tor Browser.app"
 end
