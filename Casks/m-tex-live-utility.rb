@@ -6,8 +6,6 @@ cask "m-tex-live-utility" do
   name "TeX Live Utility"
   homepage "https://github.com/amaxwell/tlutility"
 
-  # This cask uses both stable and unstable releases, so we use a `strategy`
-  # block to override the `GithubReleases` strategy's pre-release filtering.
   livecheck do
     url :url
     strategy :github_releases do |json|
