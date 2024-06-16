@@ -10,9 +10,17 @@ cask "m-obs" do
   desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/"
 
+  # This cask uses both stable and unstable releases, so we use a `strategy`
+  # block to override the `GithubReleases` strategy's pre-release filtering.
   livecheck do
     url :url
-    regex(/v?(\d+(?:[.-]\d+)+(?:(?:-beta\d+)|(?:-rc\d+))?)/i)
+    strategy :github_releases do |json|
+      json.map do |release|
+        next if release["draft"]
+
+        release["tag_name"]
+      end
+    end
   end
 
   app "OBS.app"
