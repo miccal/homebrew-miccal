@@ -9,8 +9,9 @@ cask "m-tor-browser" do
 
   livecheck do
     url "https://dist.torproject.org/torbrowser/"
-    strategy :page_match do |page|
-      match = page.match(/(\d+(?:.\d+)+).*(\d{4}-\d{2}-\d{2})\s(\d{2}:\d{2})/i)
+    regex(/(\d+(?:.\d+)+).*?(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})/i)
+    strategy :page_match do |page, regex|
+      match = page.match(regex)
       next if match.blank?
 
       "#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")},#{match[1]}"
