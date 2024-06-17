@@ -1,8 +1,8 @@
 cask "m-tor-browser" do
-  version "13.0.16,2024.06.11.18.42"
+  version "2024.06.11.18.42,13.0.16"
   sha256 :no_check
 
-  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.first}/tor-browser-macos-#{version.csv.first}.dmg"
+  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
   name "Tor Browser"
   homepage "https://www.torproject.org/"
 
@@ -13,7 +13,7 @@ cask "m-tor-browser" do
       match = page.match(regex)
       next if match.blank?
 
-      "#{match[1]},#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")}"
+      "#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")},#{match[1]}"
     end
   end
 
