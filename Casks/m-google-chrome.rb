@@ -1,4 +1,4 @@
-cask "google-chrome" do
+cask "m-google-chrome" do
   version "126.0.6478.62"
   sha256 :no_check
 
