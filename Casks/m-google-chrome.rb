@@ -3,7 +3,7 @@ cask "m-google-chrome" do
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg"
-  desc "Web browser"
+  name "Google Chrome"
   homepage "https://www.google.com/chrome/"
 
   livecheck do
