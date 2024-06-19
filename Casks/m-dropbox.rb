@@ -10,8 +10,7 @@ cask "m-dropbox" do
   homepage "https://www.dropboxforum.com/t5/Dropbox-desktop-client-builds/bd-p/101003016"
 
   livecheck do
-    url :homepage
-    regex(/Beta\sBuild\s(\d+(?:\.\d+)+)/i)
+    cask "dropbox@beta"
   end
 
   app "Dropbox.app"
