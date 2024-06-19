@@ -1,4 +1,4 @@
-The Casks listed below differ in some way from those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
+The Casks listed below are either not available or differ in some way from those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
 
 The Casks _not_ listed below are just basic simplifications of those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
 
