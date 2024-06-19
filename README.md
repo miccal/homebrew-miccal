@@ -1,5 +1,3 @@
-## Why do you have these as separate Casks?
-
 The Casks listed below differ in some way from those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
 
 The Casks _not_ listed below are just basic simplifications of those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
