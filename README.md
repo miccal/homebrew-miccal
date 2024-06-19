@@ -1,5 +1,9 @@
 ## Why do you have these as separate Casks?
 
+The Casks listed below differ in some way from those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
+
+The Casks _not_ listed below are just basic simplifications of those in the main [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
+
 * [`m-dwsim`](https://github.com/miccal/homebrew-miccal/blob/master/Casks/m-dwsim.rb) will install the chemical process simulation software DWSIM, which does not pass the required signature verification checks for inclusion in [`homebrew-cask`](https://github.com/Homebrew/homebrew-cask).
 * [`m-google-chrome`](https://github.com/miccal/homebrew-miccal/blob/master/Casks/m-google-chrome.rb) will install the latest stable version of [`google-chrome`](https://github.com/homebrew/homebrew-cask/blob/master/Casks/g/google-chrome.rb) whenever a new version on the "[Extended Stable](https://chromiumdash.appspot.com/releases?platform=Mac)" channel is announced.
 * [`m-libreoffice`](https://github.com/miccal/homebrew-miccal/blob/master/Casks/m-libreoffice.rb) will install the latest version (be it a stable release, a release candidate or a development release) of [`libreoffice`](https://github.com/homebrew/homebrew-cask/blob/master/Casks/l/libreoffice.rb) with the binary `soffice` aliased to the binary `libreoffice`.
