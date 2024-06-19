@@ -1,4 +1,4 @@
-cask "texshop" do
+cask "m-texshop" do
   version "5.36"
   sha256 :no_check
 
