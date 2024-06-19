@@ -5,14 +5,7 @@ cask "m-apparency" do
   url "https://mothersruin.com/software/downloads/Apparency.dmg"
 
   livecheck do
-    url "https://www.mothersruin.com/software/Apparency/data/ApparencyVersionInfo.plist"
-    strategy :xml do |xml|
-      short_version = xml.elements["//key[text()='CFBundleShortVersionString']"]&.next_element&.text&.strip
-      version = xml.elements["//key[text()='CFBundleVersion']"]&.next_element&.text&.strip
-      next if short_version.blank? || version.blank?
-
-      "#{short_version},#{version}"
-    end
+    cask "apparency"
   end
 
   name "Apparency"
