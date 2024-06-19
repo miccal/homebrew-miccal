@@ -1,4 +1,4 @@
-cask "ipe" do
+cask "m-ipe" do
   arch arm: "arm", intel: "intel"
 
   version "7.2.29"
@@ -10,8 +10,7 @@ cask "ipe" do
   homepage "https://ipe.otfried.org/"
 
   livecheck do
-    url :homepage
-    regex(/href=.*?ipe[._-](\d+(?:\.\d+)+)[._-]mac[._-]#{arch}\.dmg/i)
+    cask "ipe"
   end
 
   app "Ipe.app"
