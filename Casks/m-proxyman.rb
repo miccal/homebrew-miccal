@@ -1,4 +1,4 @@
-cask "proxyman" do
+cask "m-proxyman" do
   version "5.5.0,50500"
   sha256 :no_check
 
