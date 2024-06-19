@@ -10,7 +10,7 @@ cask "m-zoom" do
   homepage "https://www.zoom.us/"
 
   livecheck do
-    cssk "zoom"
+    cask "zoom"
   end
 
   pkg "zoomusInstallerFull.pkg"
