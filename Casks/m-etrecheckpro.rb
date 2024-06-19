@@ -7,10 +7,7 @@ cask "m-etrecheckpro" do
   homepage "https://etrecheck.com/"
 
   livecheck do
-    url "https://cdn.etrecheck.com/EtreCheckProUpdates.plist"
-    strategy :xml do |xml|
-      xml.elements["//key[text()='CFBundleShortVersionString']"]&.next_element&.text&.strip
-    end
+    cask "etrecheckpro"
   end
 
   app "EtreCheckPro.app"
