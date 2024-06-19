@@ -1,0 +1,15 @@
+cask "m-launchcontrol" do
+  version "2.6.1"
+  sha256 "75804fee7582c52cebc91b6881d333bbcd980a6353163080b2b1d8ecc86bf403"
+
+  url "https://www.soma-zone.com/download/files/LaunchControl-#{version}.tar.xz"
+  name "LaunchControl"
+  homepage "https://www.soma-zone.com/LaunchControl/"
+
+  livecheck do
+    cask "launchcontrol"
+  end
+
+  app "LaunchControl.app"
+  binary "#{appdir}/LaunchControl.app/Contents/MacOS/fdautil"
+end
