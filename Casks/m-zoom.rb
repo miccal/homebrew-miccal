@@ -1,6 +1,5 @@
 cask "m-zoom" do
   arch arm: "arm64/"
-  livecheck_folder = on_arch_conditional arm: "?archType=arm64"
 
   version "6.1.0.35886"
   sha256 :no_check
