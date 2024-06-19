@@ -1,4 +1,4 @@
-cask "folx" do
+cask "m-folx" do
   version "5.27"
   sha256 :no_check
 
@@ -7,8 +7,7 @@ cask "folx" do
   homepage "https://mac.eltima.com/download-manager.html"
 
   livecheck do
-    url "https://cdn.electronic.us/products/folx/mac/update/settings.xml"
-    strategy :sparkle, &:short_version
+    cask "folx"
   end
 
   app "Folx.app"
