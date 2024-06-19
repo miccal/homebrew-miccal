@@ -5,7 +5,7 @@ cask "m-dropbox" do
   sha256 :no_check
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&rtoken=&type=full#{arch}"
-  name "Dropbox"
+  name "Dropbox Beta"
   homepage "https://www.dropboxforum.com/t5/Dropbox-desktop-client-builds/bd-p/101003016"
 
   livecheck do
