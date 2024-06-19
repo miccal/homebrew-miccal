@@ -5,7 +5,7 @@ cask "m-slack" do
   sha256 :no_check
 
   url "https://downloads.slack-edge.com/desktop-releases/mac/#{arch}/#{version}/Slack-#{version}-macOS.dmg"
-  name "Slack"
+  name "Slack Beta"
   homepage "https://slack.com/beta/osx"
 
   livecheck do
