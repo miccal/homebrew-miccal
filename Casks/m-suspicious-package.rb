@@ -9,7 +9,7 @@ cask "m-suspicious-package" do
   livecheck do
     cask "suspicious-package"
   end
-  
+
   app "Suspicious Package.app"
   binary "#{appdir}/Suspicious Package.app/Contents/SharedSupport/spkg"
 end
