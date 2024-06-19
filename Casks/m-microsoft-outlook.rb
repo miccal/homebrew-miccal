@@ -19,10 +19,4 @@ cask "m-microsoft-outlook" do
           "attributeSetting" => 0,
         },
       ]
-
-  uninstall launchctl: "com.microsoft.office.licensingV2.helper",
-            pkgutil:   [
-              "com.microsoft.package.Microsoft_Outlook.app",
-              "com.microsoft.pkg.licensing",
-            ]
 end
