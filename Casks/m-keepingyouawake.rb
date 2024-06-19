@@ -7,8 +7,7 @@ cask "m-keepingyouawake" do
   homepage "https://keepingyouawake.app/"
 
   livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    cask "keepingyouawake"
   end
 
   app "KeepingYouAwake.app"
