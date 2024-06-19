@@ -3,13 +3,12 @@ cask "m-apparency" do
   sha256 :no_check
 
   url "https://mothersruin.com/software/downloads/Apparency.dmg"
+  name "Apparency"
+  homepage "https://www.mothersruin.com/software/Apparency/"
 
   livecheck do
     cask "apparency"
   end
-
-  name "Apparency"
-  homepage "https://www.mothersruin.com/software/Apparency/"
 
   app "Apparency.app"
   binary "#{appdir}/Apparency.app/Contents/MacOS/appy"
