@@ -19,10 +19,4 @@ cask "m-microsoft-teams" do
           "attributeSetting" => 0,
         },
       ]
-
-  uninstall launchctl: "com.microsoft.teams.TeamsUpdaterDaemon",
-            pkgutil:   [
-              "com.microsoft.MSTeamsAudioDevice",
-              "com.microsoft.teams2",
-            ]
 end
