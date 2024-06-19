@@ -1,4 +1,4 @@
-cask "apparency" do
+cask "m-apparency" do
   version "2.0,426"
   sha256 :no_check
 
