@@ -3,8 +3,6 @@ cask "m-wolfram-engine" do
   sha256 :no_check
 
   url "https://files.wolframcdn.com/packages/Homebrew/#{version}/WolframEngine_#{version.major_minor_patch}_MAC.dmg"
-  name "Wolfram Engine"
-  homepage "https://www.wolfram.com/engine/"
 
   livecheck do
     cask "wolfram-engine"
