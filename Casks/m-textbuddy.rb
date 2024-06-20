@@ -3,8 +3,6 @@ cask "m-textbuddy" do
   sha256 :no_check
 
   url "https://get.retina.studio/textbuddy/textbuddy_#{version.csv.second}.zip"
-  name "TextBuddy"
-  homepage "https://retina.studio/textbuddy/"
 
   livecheck do
     cask "textbuddy"
