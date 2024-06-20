@@ -2,7 +2,7 @@ cask "m-tor-browser" do
   version "2024.06.20.18.08,13.5"
   sha256 :no_check
 
-  url "https://archive.torproject.org/tor-package-archive/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
+  url "https://dist.torproject.org/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
 
   livecheck do
     url "https://dist.torproject.org/torbrowser/"
