@@ -3,8 +3,6 @@ cask "m-google-chrome" do
   sha256 :no_check
 
   url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg"
-  name "Google Chrome"
-  homepage "https://www.google.com/chrome/"
 
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Extended&platform=Mac"
