@@ -3,8 +3,6 @@ cask "m-dwsim" do
   sha256 :no_check
 
   url "https://downloads.sourceforge.net/dwsim/DWSIM%20#{version}.dmg"
-  name "DWSIM"
-  homepage "https://dwsim.org/"
 
   livecheck do
     url "https://sourceforge.net/projects/dwsim/rss?path=/DWSIM"
