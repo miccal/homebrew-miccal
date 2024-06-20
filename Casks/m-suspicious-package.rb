@@ -3,8 +3,6 @@ cask "m-suspicious-package" do
   sha256 :no_check
 
   url "https://www.mothersruin.com/software/downloads/SuspiciousPackage.dmg"
-  name "Suspicious Package"
-  homepage "https://www.mothersruin.com/software/SuspiciousPackage/"
 
   livecheck do
     cask "suspicious-package"
