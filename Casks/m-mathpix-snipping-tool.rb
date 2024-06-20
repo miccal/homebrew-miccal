@@ -3,8 +3,6 @@ cask "m-mathpix-snipping-tool" do
   sha256 :no_check
 
   url "https://mathpix.com/dmg/SnippingTool-v#{version}.dmg"
-  name "Mathpix Snipping Tool"
-  homepage "https://mathpix.com/"
 
   livecheck do
     cask "mathpix-snipping-tool"
