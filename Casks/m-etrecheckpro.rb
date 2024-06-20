@@ -3,8 +3,6 @@ cask "m-etrecheckpro" do
   sha256 :no_check
 
   url "https://cdn.etrecheck.com/EtreCheckPro.zip"
-  name "EtreCheck"
-  homepage "https://etrecheck.com/"
 
   livecheck do
     cask "etrecheckpro"
