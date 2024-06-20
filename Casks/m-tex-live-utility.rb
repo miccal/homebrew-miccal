@@ -3,8 +3,6 @@ cask "m-tex-live-utility" do
   sha256 :no_check
 
   url "https://github.com/amaxwell/tlutility/releases/download/#{version}/TeX.Live.Utility.app-#{version}.zip"
-  name "TeX Live Utility"
-  homepage "https://github.com/amaxwell/tlutility"
 
   livecheck do
     url :url
