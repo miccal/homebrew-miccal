@@ -5,8 +5,6 @@ cask "m-obs" do
   sha256 :no_check
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/OBS-Studio-#{version}-macOS-#{arch}.dmg"
-  name "OBS"
-  homepage "https://obsproject.com/"
 
   livecheck do
     url :url
