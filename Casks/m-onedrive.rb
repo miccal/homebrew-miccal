@@ -3,8 +3,6 @@ cask "m-onedrive" do
   sha256 :no_check
 
   url "https://oneclient.sfx.ms/Mac/Installers/#{version}/universal/OneDrive.pkg"
-  name "OneDrive"
-  homepage "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
 
   livecheck do
     cask "onedrive"
