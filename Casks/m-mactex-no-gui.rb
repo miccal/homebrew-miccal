@@ -3,8 +3,6 @@ cask "m-mactex-no-gui" do
   sha256 :no_check
 
   url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/mactex-#{version.no_dots}.pkg"
-  name "MacTeX"
-  homepage "https://www.tug.org/mactex/"
 
   livecheck do
     cask "mactex"
