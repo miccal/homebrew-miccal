@@ -3,8 +3,6 @@ cask "m-vmware-horizon-client" do
   sha256 :no_check
 
   url "https://download3.omnissa.com/software/#{version.csv.second}/VMware-Horizon-Client-#{version.csv.first}.dmg"
-  name "VMware Horizon Client"
-  homepage "https://www.vmware.com/"
 
   livecheck do
     cask "vmware-horizon-client"
