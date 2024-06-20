@@ -5,8 +5,6 @@ cask "m-zoom" do
   sha256 :no_check
 
   url "https://cdn.zoom.us/prod/#{version}/#{arch}zoomusInstallerFull.pkg"
-  name "Zoom"
-  homepage "https://www.zoom.us/"
 
   livecheck do
     cask "zoom"
@@ -16,7 +14,7 @@ cask "m-zoom" do
 
   postflight do
     retries ||= 3
-    ohai "The Zoom package launches Zoom" if retries >= 3
+    ohai "The install package launches Zoom" if retries >= 3
     ohai "Attempting to close Zoom" if retries >= 3
     return unless system_command "/usr/bin/pkill", args: ["-f", "/Applications/zoom.us.app"]
   rescue RuntimeError
