@@ -5,8 +5,6 @@ cask "m-sage" do
   sha256 :no_check
 
   url "https://github.com/3-manifolds/Sage_macOS/releases/download/v#{version.csv.second}/SageMath-#{version.csv.first}_#{arch}.dmg"
-  name "Sage"
-  homepage "https://www.sagemath.org/"
 
   livecheck do
     cask "sage"
