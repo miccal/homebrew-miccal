@@ -3,8 +3,6 @@ cask "m-keepingyouawake" do
   sha256 :no_check
 
   url "https://github.com/newmarcel/KeepingYouAwake/releases/download/#{version}/KeepingYouAwake-#{version}.zip"
-  name "KeepingYouAwake"
-  homepage "https://keepingyouawake.app/"
 
   livecheck do
     cask "keepingyouawake"
