@@ -5,8 +5,6 @@ cask "m-devtoys" do
   sha256 :no_check
 
   url "https://github.com/DevToys-app/DevToys/releases/download/v#{version}/devtoys_osx_#{arch}.zip"
-  name "DevToys"
-  homepage "https://github.com/DevToys-app/DevToys"
 
   app "DevToys.app"
 end
