@@ -4,11 +4,6 @@ cask "m-mpv" do
 
   url "https://github.com/vitorgalvao/mpv-dummy/releases/download/#{version}/mpv.DUMMY.dmg"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   depends_on formula: "mpv"
 
   app "mpv.app"
