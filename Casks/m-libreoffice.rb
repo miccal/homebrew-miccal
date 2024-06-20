@@ -11,8 +11,6 @@ cask "m-libreoffice" do
   #url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg"
   # Dev:
   url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/#{folder}/LibreOfficeDev_#{version}_MacOS_#{arch}.dmg"
-  name "LibreOffice"
-  homepage "https://www.libreoffice.org/"
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
