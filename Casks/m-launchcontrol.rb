@@ -3,8 +3,6 @@ cask "m-launchcontrol" do
   sha256 :no_check
 
   url "https://www.soma-zone.com/download/files/LaunchControl-#{version}.tar.xz"
-  name "LaunchControl"
-  homepage "https://www.soma-zone.com/LaunchControl/"
 
   livecheck do
     cask "launchcontrol"
