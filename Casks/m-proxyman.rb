@@ -3,8 +3,6 @@ cask "m-proxyman" do
   sha256 :no_check
 
   url "https://download.proxyman.io/#{version.csv.second}/Proxyman_#{version.csv.first}.dmg"
-  name "Proxyman"
-  homepage "https://proxyman.io/"
 
   livecheck do
     cask "proxyman"
