@@ -1,4 +1,4 @@
-cask "m-mactex-no-gui" do
+cask "m-mactex" do
   version "2024.0312"
   sha256 :no_check
 
