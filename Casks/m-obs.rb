@@ -27,4 +27,12 @@ cask "m-obs" do
       exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
     EOS
   end
+
+  caveats <<~EOS
+    #{token} should be uninstalled manually by trashing the app bundle and
+    rebooting to ensure that the system extension is uninstalled correctly.
+    Run the command
+      $ systemextensionsctl list
+    to check the state of the system extension.
+  EOS
 end
