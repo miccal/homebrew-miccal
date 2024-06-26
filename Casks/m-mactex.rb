@@ -16,7 +16,7 @@ cask "m-mactex" do
 
   depends_on formula: "ghostscript"
 
-  pkg "mactex-#{version.csv.first.no_dots}.pkg",
+  pkg "mactex-#{version.csv.first}#{version.csv.second}.pkg",
       # installer -showChoicesXML -pkg filename.pkg -target /
       choices: [
         {
