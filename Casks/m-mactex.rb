@@ -8,7 +8,7 @@ cask "m-mactex" do
     url "https://ctan.org/texarchive/systems/mac/mactex/"
     strategy :page_match do |page|
       match = page.match(
-        /mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n?.*?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/,
+        /mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/,
       )
       next if match.blank?
 
