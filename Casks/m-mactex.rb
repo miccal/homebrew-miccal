@@ -6,10 +6,9 @@ cask "m-mactex" do
 
   livecheck do
     url "https://ctan.org/texarchive/systems/mac/mactex/"
-    strategy :page_match do |page|
-      match = page.match(
-        /mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/,
-      )
+    regex(/mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/)
+    strategy :page_match do |page, regex|
+      match = page.match(regex)
       next if match.blank?
 
       "#{match[1]},#{match[2]},#{match[3]}"
