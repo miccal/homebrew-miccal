@@ -5,7 +5,7 @@ cask "m-mactex" do
   url "http://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
 
   livecheck do
-    url "https://ctan.org/texarchive/systems/mac/mactex/"
+    url "http://dante.ctan.org/tex-archive/systems/mac/mactex/"
     regex(/mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n*?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/)
     strategy :page_match do |page, regex|
       match = page.match(regex)
