@@ -9,5 +9,4 @@ cask "m-launchcontrol" do
   end
 
   app "LaunchControl.app"
-  binary "#{appdir}/LaunchControl.app/Contents/MacOS/fdautil"
 end
