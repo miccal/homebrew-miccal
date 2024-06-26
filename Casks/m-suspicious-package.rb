@@ -9,5 +9,4 @@ cask "m-suspicious-package" do
   end
 
   app "Suspicious Package.app"
-  binary "#{appdir}/Suspicious Package.app/Contents/SharedSupport/spkg"
 end
