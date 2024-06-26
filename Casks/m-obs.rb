@@ -18,15 +18,6 @@ cask "m-obs" do
   end
 
   app "OBS.app"
-  shimscript = "#{staged_path}/obs.wrapper.sh"
-  binary shimscript, target: "obs"
-
-  preflight do
-    File.write shimscript, <<~EOS
-      #!/bin/bash
-      exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
-    EOS
-  end
 
   caveats <<~EOS
     #{token} should be uninstalled manually by trashing the OBS.app
