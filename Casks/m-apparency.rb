@@ -9,5 +9,4 @@ cask "m-apparency" do
   end
 
   app "Apparency.app"
-  binary "#{appdir}/Apparency.app/Contents/MacOS/appy"
 end
