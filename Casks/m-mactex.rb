@@ -6,12 +6,17 @@ cask "m-mactex" do
 
   livecheck do
     url "http://dante.ctan.org/tex-archive/systems/mac/mactex/"
-    regex(/mactex[._-]v?(\d{4})(\d{4})\.pkg(?:.*?\n*?)+mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/)
-    strategy :page_match do |page, regex|
-      match = page.match(regex)
-      next if match.blank?
+    strategy :page_match do |page|
+      year = page[/mactex[._-]v?(\d{4})\d{4}\.pkg/i, 1]
+      next if year.blank?
 
-      "#{match[1]},#{match[2]},#{match[3]}"
+      date = page[/mactex[._-]v?\d{4}(\d{4})\.pkg/i, 1]
+      next if date.blank?
+
+      gs = page[/mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/i, 1]
+      next if gs.blank?
+
+      "#{year},#{date},#{gs}"
     end
   end
 
