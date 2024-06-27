@@ -14,7 +14,7 @@ cask "m-libreoffice" do
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
-    regex(/href=.*?LibreOffice(?:Dev)?[._-]v?(.+?)[._-]MacOS[._-]#{arch}\.dmg/i)
+    regex(/href=.*?LibreOffice(?:Dev)?[._-]v?(.+)[._-]MacOS[._-]#{arch}\.dmg/i)
     strategy :page_match do |page, regex|
       versions = page.scan(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
                      .flatten
