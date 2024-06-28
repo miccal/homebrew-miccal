@@ -7,16 +7,28 @@ cask "m-mactex" do
   livecheck do
     url "http://dante.ctan.org/tex-archive/systems/mac/mactex/"
     strategy :page_match do |page|
-      year = page[/mactex[._-]v?(\d{4})\d{4}\.pkg/i, 1]
+      year = page.scan(/mactex[._-]v?(\d{4})\d{4}\.pkg/i)
+                 .flatten
+                 .uniq
+                 .map { |v| Version.new(v) }
+                 .sort
       next if year.blank?
 
-      date = page[/mactex[._-]v?\d{4}(\d{4})\.pkg/i, 1]
+      date = page.scan(/mactex[._-]v?\d{4}(\d{4})\.pkg/i)
+                 .flatten
+                 .uniq
+                 .map { |v| Version.new(v) }
+                 .sort
       next if date.blank?
 
-      gs = page[/mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/i, 1]
+      gs = page.scan(/mactex[._-]ghostscript[._-]v?(\d+(?:\.\d+)+)[._-]\d{8}\.pkg/i)
+               .flatten
+               .uniq
+               .map { |v| Version.new(v) }
+               .sort
       next if gs.blank?
 
-      "#{year},#{date},#{gs}"
+      "#{year.last},#{date.last},#{gs.last}"
     end
   end
 
