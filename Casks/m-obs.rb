@@ -24,8 +24,9 @@ cask "m-obs" do
     bundle and rebooting macOS to ensure that the system extension
       com.obsproject.obs-studio.mac-camera-extension
     is uninstalled correctly.
-    Run the command
+    To reinstall, run the command
+      brew install --force m-obs
+    To check the state of the system extension, run the command
       systemextensionsctl list
-    to check the state of the system extension.
   EOS
 end
