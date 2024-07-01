@@ -11,15 +11,4 @@ cask "m-zoom" do
   end
 
   pkg "zoomusInstallerFull.pkg"
-
-  postflight do
-    retries ||= 3
-    ohai "The install package launches Zoom" if retries >= 3
-    ohai "Attempting to close Zoom" if retries >= 3
-    return unless system_command "/usr/bin/pkill", args: ["-f", "/Applications/zoom.us.app"]
-  rescue RuntimeError
-    sleep 1
-    retry unless (retries -= 1).zero?
-    opoo "Unable to close Zoom"
-  end
 end
