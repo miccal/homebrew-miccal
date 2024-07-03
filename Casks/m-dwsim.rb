@@ -6,7 +6,7 @@ cask "m-dwsim" do
 
   livecheck do
     url "https://sourceforge.net/projects/dwsim/rss?path=/DWSIM"
-    regex(%r{url=.*?/DWSIM(?:[._-]|%20)v?(\d+(?:\.\d+)+)\.dmg}i)
+    regex(/DWSIM(?:[._-]|%20)v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   app "DWSIM.app"
