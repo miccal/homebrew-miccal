@@ -29,4 +29,14 @@ cask "m-microsoft-defender" do
               "com.microsoft.dlp.ux",
               "com.microsoft.wdav",
             ]
+
+  caveats <<~EOS
+    Reboot macOS to ensure that the Microsoft Defender Network Extension
+      com.microsoft.wdav.netext
+    and the Microsoft Defender Endpoint Security Extension
+      com.microsoft.wdav.epsext
+    are uninstalled correctly.
+    To check the state of the system extension, run the command
+      systemextensionsctl list
+  EOS
 end
