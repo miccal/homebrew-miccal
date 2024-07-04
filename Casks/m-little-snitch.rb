@@ -23,4 +23,14 @@ cask "m-little-snitch" do
   end
 
   app "Little Snitch.app"
+
+  caveats <<~EOS
+    Reboot macOS to ensure that the Little Snitch Network Extension
+      at.obdev.littlesnitch.networkextension
+    and the Little Snitch Endpoint Security Extension
+      at.obdev.littlesnitch.endpointsecurity
+    are uninstalled correctly.
+    To check the state of the system extensions, run the command
+      systemextensionsctl list
+  EOS
 end
