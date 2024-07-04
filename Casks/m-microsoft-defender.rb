@@ -36,7 +36,7 @@ cask "m-microsoft-defender" do
     and the Microsoft Defender Endpoint Security Extension
       com.microsoft.wdav.epsext
     are uninstalled correctly.
-    To check the state of the system extension, run the command
+    To check the state of the system extensions, run the command
       systemextensionsctl list
   EOS
 end
