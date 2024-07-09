@@ -7,7 +7,7 @@ cask "m-google-chrome" do
   livecheck do
     url "https://chromiumdash.appspot.com/fetch_releases?channel=Extended&platform=Mac"
     strategy :json do |json|
-      json["version"]
+      json.dig("version")
     end
   end
 
