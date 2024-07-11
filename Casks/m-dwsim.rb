@@ -1,5 +1,5 @@
 cask "m-dwsim" do
-  version "8.7.1"
+  version "8.8.0"
   sha256 :no_check
 
   url "https://downloads.sourceforge.net/dwsim/DWSIM%20#{version}.dmg"
