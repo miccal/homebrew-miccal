@@ -6,7 +6,7 @@ cask "m-tor-browser" do
 
   livecheck do
     url "https://dist.torproject.org/torbrowser/?C=M;O=A"
-    regex(%r{href=["']?v?(\d+(?:.\d+)+)/?["' >])}i)
+    regex(%r{href=["']?v?(\d+(?:.\d+)+)/?["' >]}i)
     strategy :page_match do |page, regex|
       match = page.match(regex)
       next if match.blank?
