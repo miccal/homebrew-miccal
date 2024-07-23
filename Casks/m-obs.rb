@@ -25,7 +25,7 @@ cask "m-obs" do
       com.obsproject.obs-studio.mac-camera-extension
     is uninstalled correctly.
     To reinstall, run the command
-      brew install --force m-obs
+      brew install --force #{token}
     To check the state of the system extension, run the command
       systemextensionsctl list
   EOS
