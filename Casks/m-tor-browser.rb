@@ -11,7 +11,7 @@ cask "m-tor-browser" do
       match = page.match(regex)
       next if match.blank?
 
-      "#{match[2].tr("-", ".")}.#{match[3].tr(":", ".")},#{match[1]}"
+      match[1]
     end
   end
 
