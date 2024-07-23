@@ -5,7 +5,7 @@ cask "m-tor-browser" do
   url "https://dist.torproject.org/torbrowser/#{version.csv.second}/tor-browser-macos-#{version.csv.second}.dmg"
 
   livecheck do
-    url "https://dist.torproject.org/torbrowser/?C=M;O=A"
+    url "https://dist.torproject.org/torbrowser/?C=M;O=D"
     regex(%r{href=["']?v?(\d+(?:.\d+)+)/?["' >]}i)
     strategy :page_match do |page, regex|
       match = page.match(regex)
