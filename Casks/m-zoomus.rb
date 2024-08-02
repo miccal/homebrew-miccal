@@ -1,4 +1,4 @@
-cask "m-zoom" do
+cask "m-zoomus" do
   arch arm: "arm64/"
 
   version "6.1.6.37851"
