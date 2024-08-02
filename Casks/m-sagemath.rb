@@ -1,4 +1,4 @@
-cask "m-sage" do
+cask "m-sagemath" do
   arch arm: "arm64", intel: "x86_64"
 
   version "10.4,2.4.0"
