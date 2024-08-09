@@ -1,5 +1,5 @@
 cask "m-wolfram-engine" do
-  version "14.0.0.0"
+  version "14.1.0.0"
   sha256 :no_check
 
   url "https://files.wolframcdn.com/packages/Homebrew/#{version}/WolframEngine_#{version.major_minor_patch}_MAC.dmg"
