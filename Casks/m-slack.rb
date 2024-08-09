@@ -1,7 +1,7 @@
 cask "m-slack" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.39.95"
+  version "4.40.114"
   sha256 :no_check
 
   url "https://downloads.slack-edge.com/desktop-releases/mac/#{arch}/#{version}/Slack-#{version}-macOS.dmg"
