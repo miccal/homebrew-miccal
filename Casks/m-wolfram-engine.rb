@@ -5,8 +5,9 @@ cask "m-wolfram-engine" do
   url "https://files.wolframcdn.com/packages/Homebrew/#{version}/WolframEngine_#{version.major_minor_patch}_MAC.dmg"
 
   livecheck do
-    url "https://www.wolfram.com/engine/"
-    regex(/version=(\d+(?:\.\d+)+)&platform=Mac/i)
+    url "https://account.wolfram.com/dl/WolframEngine?&platform=Mac"
+    regex(%r{WolframEngine/(\d+(?:\.\d+)+)/}i)
+    strategy :header_match
   end
 
   app "Wolfram Engine.app"
