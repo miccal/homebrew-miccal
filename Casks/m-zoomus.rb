@@ -14,7 +14,7 @@ cask "m-zoomus" do
 
   postflight do
     system_command "/bin/rm",
-                   args:         ["/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"],
-                   sudo:         true
+                   args: ["/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"],
+                   sudo: true
   end
 end
