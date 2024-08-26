@@ -13,6 +13,6 @@ cask "m-zoomus" do
   pkg "zoomusInstallerFull.pkg"
 
   postflight do
-    FileUtils.rm("/Library/PrivilegedHelperTools/us.zoom.ZoomDaemon")
+    FileUtils.rm("/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist")
   end
 end
