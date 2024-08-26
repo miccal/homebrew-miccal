@@ -13,7 +13,8 @@ cask "m-zoomus" do
   pkg "zoomusInstallerFull.pkg"
 
   postflight do
-    set_ownership "/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"
-    FileUtils.rm("/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist")
+    system_command "/bin/rm",
+                   args:         ["/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"],
+                   sudo:         true,
   end
 end
