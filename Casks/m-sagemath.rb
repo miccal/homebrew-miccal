@@ -20,8 +20,8 @@ cask "m-sagemath" do
   end
 
   uninstall pkgutil: [
-              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
-              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
-              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
-            ]
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
+  ]
 end
