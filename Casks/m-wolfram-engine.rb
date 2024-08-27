@@ -10,4 +10,10 @@ cask "m-wolfram-engine" do
 
   app "Wolfram Engine.app"
   binary "#{appdir}/Wolfram Engine.app/Contents/Resources/Wolfram Player.app/Contents/MacOS/wolframscript"
+
+  postflight do
+    system_command "/bin/rm",
+                   args: ["-r", "~/Library/Jupyter/kernels/wolframlanguage#{version.major_minor}"],
+                   sudo: true
+  end
 end
