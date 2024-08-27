@@ -20,8 +20,7 @@ cask "m-obs" do
   app "OBS.app"
 
   caveats <<~EOS
-    #{token} should be uninstalled manually by trashing the OBS.app
-    bundle and rebooting macOS to ensure that the system extension
+    #{token} should be uninstalled manually by trashing the OBS.app bundle and rebooting macOS to ensure that the system extension
       com.obsproject.obs-studio.mac-camera-extension
     is uninstalled correctly.
     To reinstall, run the command
