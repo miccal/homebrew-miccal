@@ -12,4 +12,16 @@ cask "m-sagemath" do
 
   app "SageMath-#{version.csv.first.dots_to_hyphens}.app"
   pkg "Recommended_#{version.csv.first.dots_to_underscores}.pkg"
+
+  uninstall pkgutil: [
+              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
+              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
+              "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
+            ]
+
+  postflight do
+    system_command "/bin/rm",
+                   args: ["-r", "/usr/local/share/jupyter/kernels/SageMath-#{version.csv.first.dots_to_underscores}"],
+                   sudo: true
+  end
 end
