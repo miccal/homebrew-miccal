@@ -17,4 +17,8 @@ cask "m-zoomus" do
                    args: ["/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"],
                    sudo: true
   end
+
+  caveats <<~EOS
+    The postflight block removes the Global Launch Daemon of #{token}, as it casues issues on Arm-based Mac's.
+  EOS
 end
