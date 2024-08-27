@@ -13,7 +13,13 @@ cask "m-wolfram-engine" do
 
   postflight do
     system_command "/bin/rm",
-                   args: ["-r", "~/Library/Jupyter/kernels/wolframlanguage#{version.major_minor}"],
+                   args: ["-r", "~/Library/Jupyter/kernels/wolframlanguage14.1"],
                    sudo: true
   end
+
+  caveats <<~EOS
+    The postflight block removes the JupyterLab kernel for the previous version of #{token}.
+    To check current list of JupyterLab kernels, run the command
+      jupyter kernelspec list
+  EOS
 end
