@@ -19,7 +19,7 @@ cask "m-wolfram-engine" do
 
   caveats <<~EOS
     The postflight block removes the JupyterLab kernel for the previous version of #{token}.
-    To check current list of JupyterLab kernels, run the command
+    To check the current list of JupyterLab kernels, run the command
       jupyter kernelspec list
   EOS
 end
