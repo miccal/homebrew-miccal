@@ -19,6 +19,6 @@ cask "m-zoomus" do
   end
 
   caveats <<~EOS
-    The postflight block removes the Global Launch Daemon of #{token}, as it causes issues on Arm-based Mac's.
+    The postflight block removes the Global Launch Daemon of #{token}, as it causes issues on Mac's with a Mobile Device Management (MDM) Profile.
   EOS
 end
