@@ -2,7 +2,7 @@ cask "m-little-snitch" do
   version "6.1,7113"
   sha256 :no_check
 
-  url "https://obdev.at/ftp/pub/Products/littlesnitch{"/beta" if version.csv.second}/LittleSnitch-#{version.csv.first}#{"-nightly-(#{version.csv.second})" if version.csv.second}.dmg"
+  url "https://obdev.at/ftp/pub/Products/littlesnitch{"/nightly" if version.csv.second}/LittleSnitch-#{version.csv.first}#{"-nightly-(#{version.csv.second})" if version.csv.second}.dmg"
 
   livecheck do
     url "https://sw-update.obdev.at/update-feeds/littlesnitch#{version.major}.plist"
