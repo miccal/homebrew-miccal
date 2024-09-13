@@ -5,7 +5,8 @@ cask "m-omnidisksweeper" do
   url "https://downloads.omnigroup.com/software/macOS/11/OmniDiskSweeper-#{version}.dmg"
 
   livecheck do
-    cask "omnidisksweeper"
+    url "https://www.omnigroup.com/download/latest/OmniDiskSweeper"
+    strategy :header_match
   end
 
   app "OmniDiskSweeper.app"
