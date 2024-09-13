@@ -1,5 +1,5 @@
 cask "m-omnidisksweeper" do
-  version "1.15"
+  version "1.15.1b"
   sha256 :no_check
 
   url "https://downloads.omnigroup.com/software/macOS/11/OmniDiskSweeper-#{version}.dmg"
