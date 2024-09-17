@@ -9,7 +9,7 @@ cask "m-wolfram-engine" do
   end
 
   app "Wolfram Engine.app"
-  binary "#{appdir}/Wolfram Engine.app/Contents/Resources/Wolfram Player.app/Contents/MacOS/wolframscript"
+  binary "/Applications/Wolfram Engine.app/Contents/Resources/Wolfram Player.app/Contents/MacOS/wolframscript"
 
   postflight do
     system_command "/bin/rm",
