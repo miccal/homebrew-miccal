@@ -13,7 +13,7 @@ cask "m-wolfram-engine" do
 
   postflight do
     system_command "/bin/rm",
-                   args: ["-r", "~/Library/Jupyter/kernels/wolframlanguage14.1"],
+                   args: ["-r", "$HOME/Library/Jupyter/kernels/wolframlanguage14.1"],
                    sudo: true
   end
 
