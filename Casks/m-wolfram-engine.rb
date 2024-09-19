@@ -18,13 +18,13 @@ cask "m-wolfram-engine" do
   end
 
   caveats <<~EOS
-    If the binary "wolframscript" outputs "A WolframKernel location could not be determined.", run the command
+    If the command "wolframscript" outputs "A WolframKernel location could not be determined.", run the command
       export WolframKernel=/Applications/Wolfram\ Engine.app/Contents/Resources/Wolfram\ Player.app/Contents/MacOS/WolframKernel
-    #{token} can be added as a JupyterLab kernel by running the command
+    The Wolfram Language can be added as a JupyterLab kernel by running the command
       git clone https://github.com/WolframResearch/WolframLanguageForJupyter.git
     in a suitable directory, then running the command
       cd WolframLanguageForJupyter ; wolframscript -code configure-jupyter.wls add
-    The postflight block removes the JupyterLab kernel for the previous version of #{token}.
+    The postflight block removes the JupyterLab kernel for the previous version of the Wolfram Language.
     To check the current list of JupyterLab kernels, run the command
       jupyter kernelspec list
   EOS
