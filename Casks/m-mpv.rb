@@ -13,7 +13,7 @@ cask "m-mpv" do
   app "mpv.app"
 
   caveats <<~EOS
-    #{token} installs a test build directly from github.com/mpv-player/mpv, built using the most recent commit and pull request.
-    The version is simply the date in the format {year}.{month}.{day}, which is updated on a weekly basis.
+    #{token} installs a test build of mpv.app directly from github.com/mpv-player/mpv, built using the most recent commit and pull request.
+    The version is simply the date in the format {year}.{month}.{day}, and is updated on a weekly basis.
   EOS
 end
