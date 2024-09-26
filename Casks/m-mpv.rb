@@ -7,7 +7,7 @@ cask "m-mpv" do
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{arch}.zip"
 
   livecheck do
-    skip "Version is the date in [year].[month].[day]"
+    skip
   end
 
   app "mpv.app"
