@@ -15,5 +15,11 @@ cask "m-mpv" do
   caveats <<~EOS
     #{token} installs a test build of mpv.app directly from github.com/mpv-player/mpv, built using the most recent commit and pull request.
     The version is simply the date in the format {year}.{month}.{day}, and is updated on a weekly basis.
+    Run the command
+      git ls-remote https://github.com/mpv-player/mpv.git HEAD
+    to list the reference of the the most recent commit and pull request.
+    The command
+      git ls-remote https://github.com/mpv-player/mpv.git HEAD | head -c 7 ; echo
+    will print the first seven characters of the reference, which are used as the version listed in mpv.app itself.
   EOS
 end
