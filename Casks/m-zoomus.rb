@@ -1,7 +1,7 @@
 cask "m-zoomus" do
   arch arm: "arm64/"
 
-  version "6.2.2.40571"
+  version "6.2.3.40682"
   sha256 :no_check
 
   url "https://cdn.zoom.us/prod/#{version}/#{arch}zoomusInstallerFull.pkg"
