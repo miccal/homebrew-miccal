@@ -11,12 +11,9 @@ cask "m-ipe" do
   end
 
   app "Ipe.app"
+  binary "#{appdir}//Ipe.app/Contents/MacOS/ipe"
 
   caveats <<~EOS
-    On macOS Sequoia, #{token} is not able to run LaTex commands if Ipe.app is launched from Finder:
-      https://github.com/otfried/ipe/issues/526
-    Launching Ipe.app via the command
-     open /Applications/Ipe.app
-    solves this issue.
+    Launch #{token} via the binary to ensure LaTex runs without issue.
   EOS
 end
