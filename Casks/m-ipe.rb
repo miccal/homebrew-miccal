@@ -11,7 +11,15 @@ cask "m-ipe" do
   end
 
   app "Ipe.app"
-  binary "#{appdir}//Ipe.app/Contents/MacOS/ipe"
+  shimscript = "#{staged_path}/ipe.wrapper.sh"
+  binary shimscript, target: "ipe"
+
+  preflight do
+    File.write shimscript, <<~EOS
+      #!/bin/bash
+      exec '#{appdir}//Ipe.app/Contents/MacOS/ipe' "$@"
+    EOS
+  end
 
   caveats <<~EOS
     Launch #{token} via the binary to ensure LaTex runs without issue.
