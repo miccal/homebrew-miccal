@@ -11,4 +11,11 @@ cask "m-ipe" do
   end
 
   app "Ipe.app"
+
+  caveats <<~EOS
+    On macOS Sequoia #{token} is not able to run LaTex commands if Ipe.app is launched from Finder.
+    Launching Ipe.app via the command
+     open /Applications/Ipe.app
+    solves this issue.
+  EOS
 end
