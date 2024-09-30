@@ -13,7 +13,8 @@ cask "m-ipe" do
   app "Ipe.app"
 
   caveats <<~EOS
-    On macOS Sequoia #{token} is not able to run LaTex commands if Ipe.app is launched from Finder.
+    On macOS Sequoia, #{token} is not able to run LaTex commands if Ipe.app is launched from Finder:
+      https://github.com/otfried/ipe/issues/526
     Launching Ipe.app via the command
      open /Applications/Ipe.app
     solves this issue.
