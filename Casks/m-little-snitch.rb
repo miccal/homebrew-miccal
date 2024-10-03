@@ -20,11 +20,13 @@ cask "m-little-snitch" do
   app "Little Snitch.app"
 
   caveats <<~EOS
-    Reboot macOS to ensure that the Little Snitch Network Extension
+    #{token} should be uninstalled manually by trashing the "Little Snitch.app" bundle and rebooting macOS to ensure that the Little Snitch Network Extension
       at.obdev.littlesnitch.networkextension
     and the Little Snitch Endpoint Security Extension
       at.obdev.littlesnitch.endpointsecurity
     are uninstalled correctly.
+    To reinstall, run the command
+      brew install --force #{token}
     To check the state of the system extensions, run the command
       systemextensionsctl list
   EOS
