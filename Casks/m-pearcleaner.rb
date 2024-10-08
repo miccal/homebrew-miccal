@@ -1,4 +1,4 @@
-cask "pearcleaner" do
+cask "m-pearcleaner" do
   version "3.9.1"
   sha256 :no_check
 
