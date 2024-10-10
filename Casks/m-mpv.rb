@@ -1,5 +1,5 @@
 cask "m-mpv" do
-  arch arm: "14-arm", intel: "13-intel"
+  arch arm: "15-arm", intel: "13-intel"
 
   version "20241009"
   sha256 :no_check
