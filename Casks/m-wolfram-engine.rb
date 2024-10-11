@@ -11,11 +11,11 @@ cask "m-wolfram-engine" do
   app "Wolfram Engine.app"
   pkg "WolframScript.pkg"
 
-  postflight do
-    system_command "/bin/rm",
-                   args: ["-r", "#{Dir.home}/Library/Jupyter/kernels/wolframlanguage14.1"],
-                   sudo: true
-  end
+#  postflight do
+#    system_command "/bin/rm",
+#                   args: ["-r", "#{Dir.home}/Library/Jupyter/kernels/wolframlanguage14.1"],
+#                   sudo: true
+#  end
 
   caveats <<~EOS
     If the command "wolframscript" outputs "A WolframKernel location could not be determined.", run the command
