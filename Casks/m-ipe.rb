@@ -17,7 +17,7 @@ cask "m-ipe" do
   preflight do
     File.write shimscript, <<~EOS
       #!/bin/bash
-      exec '#{appdir}//Ipe.app/Contents/MacOS/ipe' "$@"
+      exec '#{appdir}/Ipe.app/Contents/MacOS/ipe' "$@"
     EOS
   end
 
