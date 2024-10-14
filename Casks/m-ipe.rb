@@ -29,5 +29,6 @@ cask "m-ipe" do
 
   caveats <<~EOS
     Launch #{token} via the binary to ensure LaTex runs without issue.
+    The postflight block removes the extended attribute "com.apple.quarantine" of #{token}.
   EOS
 end
