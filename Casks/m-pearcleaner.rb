@@ -22,4 +22,8 @@ cask "m-pearcleaner" do
 #                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Pearcleaner.app"],
 #                   sudo: true
 #  end
+
+  caveats <<~EOS
+    The postflight block removes the extended attribute "com.apple.quarantine" of #{token}.
+  EOS
 end
