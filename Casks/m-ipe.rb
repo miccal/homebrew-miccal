@@ -21,11 +21,11 @@ cask "m-ipe" do
     EOS
   end
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Ipe.app"],
-                   sudo: true
-  end
+#  postflight do
+#    system_command "/usr/bin/xattr",
+#                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Ipe.app"],
+#                   sudo: true
+#  end
 
   caveats <<~EOS
     Launch #{token} via the binary to ensure LaTex runs without issue.
