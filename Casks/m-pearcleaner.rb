@@ -17,11 +17,11 @@ cask "m-pearcleaner" do
 
   app "Pearcleaner.app"
 
-#  postflight do
-#    system_command "/usr/bin/xattr",
-#                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Pearcleaner.app"],
-#                   sudo: true
-#  end
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Pearcleaner.app"],
+                   sudo: true
+  end
 
   caveats <<~EOS
     The postflight block removes the extended attribute "com.apple.quarantine" of #{token}.
