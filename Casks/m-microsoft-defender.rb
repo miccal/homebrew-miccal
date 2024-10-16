@@ -1,5 +1,5 @@
 cask "m-microsoft-defender" do
-  version "101.24072.0007"
+  version "101.24082.0009"
   sha256 :no_check
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Defender_#{version}_Individuals_Installer.pkg"
