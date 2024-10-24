@@ -11,15 +11,6 @@ cask "m-ipe" do
   end
 
   app "Ipe.app"
-  shimscript = "#{staged_path}/ipe.wrapper.sh"
-  binary shimscript, target: "ipe"
-
-  preflight do
-    File.write shimscript, <<~EOS
-      #!/bin/bash
-      exec '#{appdir}/Ipe.app/Contents/MacOS/ipe' "$@"
-    EOS
-  end
 
   postflight do
     system_command "/usr/bin/xattr",
@@ -28,7 +19,6 @@ cask "m-ipe" do
   end
 
   caveats <<~EOS
-    Launch #{token} via the binary to ensure LaTex runs without issue.
     The postflight block removes the extended attribute "com.apple.quarantine" of #{token}.
   EOS
 end
