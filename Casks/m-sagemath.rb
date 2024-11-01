@@ -15,8 +15,8 @@ cask "m-sagemath" do
 
   postflight do
     system_command "/bin/rm",
-                   args: ["-r", "/usr/local/share/jupyter/kernels/SageMath-10.4"],
-                   sudo: true,
+                   args:         ["-r", "/usr/local/share/jupyter/kernels/SageMath-10.4"],
+                   sudo:         true,
                    must_succeed: false
   end
 
