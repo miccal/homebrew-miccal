@@ -1,7 +1,7 @@
 cask "m-mpv" do
   arch arm: "15-arm", intel: "13-intel"
 
-  version "20241125"
+  version "2024.11.26"
   sha256 :no_check
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{arch}.zip"
@@ -18,7 +18,7 @@ cask "m-mpv" do
 
   caveats <<~EOS
     #{token} installs a test build of "mpv.app" directly from github.com/mpv-player/mpv, built using the most recent commit and pull request.
-    The version is simply the date of the most recent commit and pull request in the format {year}{month}{day}.
+    The version is simply the date of the most recent commit and pull request in the format {year}.{month}.{day}.
     Run the command
       git ls-remote https://github.com/mpv-player/mpv.git HEAD
     to list the reference of the the most recent commit and pull request.
