@@ -10,7 +10,7 @@ cask "m-mpv" do
     url "https://api.github.com/repos/mpv-player/mpv/branches/master"
     strategy :json do |json|
       date = json.dig("commit", "commit", "committer", "date")
-      Date.parse(date).strftime("%Y%m%d").to_s
+      Date.parse(date).strftime("%Y.%m.%d").to_s
     end
   end
 
