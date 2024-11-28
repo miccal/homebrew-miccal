@@ -1,7 +1,7 @@
 cask "m-mpv" do
   arch arm: "15-arm", intel: "13-intel"
 
-  version "2024.11.26"
+  version "2024.11.27"
   sha256 :no_check
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{arch}.zip"
