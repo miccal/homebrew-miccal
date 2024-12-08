@@ -13,22 +13,9 @@ cask "m-sagemath" do
   app "SageMath-#{version.csv.first.dots_to_hyphens}.app"
   pkg "Recommended_#{version.csv.first.dots_to_underscores}.pkg"
 
-  postflight do
-    system_command "/bin/rm",
-                   args:         ["-r", "/usr/local/share/jupyter/kernels/SageMath-10.4"],
-                   sudo:         true,
-                   must_succeed: false
-  end
-
   uninstall pkgutil: [
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
   ]
-
-  caveats <<~EOS
-    The postflight block removes the JupyterLab kernel for the previous version of #{token}.
-    To check the current list of JupyterLab kernels, run the command
-      jupyter kernelspec list
-  EOS
 end
