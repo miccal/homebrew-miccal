@@ -15,9 +15,9 @@ cask "m-zoomus" do
   postflight do
     system_command "/bin/rm",
                    args: [
+                     "/Library/LaunchAgents/us.zoom.updater.login.check.plist",
+                     "/Library/LaunchAgents/us.zoom.updater.plist",
                      "/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist",
-                     "/Library/LaunchAgents/us.zoom.updater.login.check",
-                     "/Library/LaunchAgents/us.zoom.ZoomDaemon",
                    ],
                    sudo: true
   end
