@@ -14,11 +14,15 @@ cask "m-zoomus" do
 
   postflight do
     system_command "/bin/rm",
-                   args: ["/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist"],
+                   args: [
+                     "/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist",
+                     "/Library/LaunchAgents/us.zoom.updater.login.check",
+                     "/Library/LaunchAgents/us.zoom.ZoomDaemon",
+                   ],
                    sudo: true
   end
 
   caveats <<~EOS
-    The postflight block removes the Global Launch Daemon of #{token}, as it causes issues on Mac's with a Mobile Device Management (MDM) Profile.
+    The postflight block removes the Global Launch Agents and Daemons of #{token}, as it causes issues on Mac's with a Mobile Device Management (MDM) Profile.
   EOS
 end
