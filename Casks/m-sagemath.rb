@@ -18,4 +18,10 @@ cask "m-sagemath" do
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
   ]
+
+  caveats <<~EOS
+    Remove the JupyterLab kernel for the previous version of #{token} using sudo rm -r.
+    Check the current list of JupyterLab kernels by run the command
+      jupyter kernelspec list
+  EOS
 end
