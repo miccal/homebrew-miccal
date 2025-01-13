@@ -21,7 +21,7 @@ cask "m-sagemath" do
 
   caveats <<~EOS
     Remove the JupyterLab kernel for the previous version of #{token} using sudo rm -r.
-    Check the current list of JupyterLab kernels by run the command
+    Check the current list of JupyterLab kernels by running the command
       jupyter kernelspec list
   EOS
 end
