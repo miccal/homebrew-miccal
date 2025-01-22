@@ -2,7 +2,7 @@ cask "m-pearcleaner" do
   version "4.0.6"
   sha256 :no_check
 
-  url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner.zip"
+  url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner-Installer.dmg"
 
   livecheck do
     url :url
