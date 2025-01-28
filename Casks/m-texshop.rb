@@ -1,5 +1,5 @@
 cask "m-texshop" do
-  version "5.48"
+  version "5.49"
   sha256 :no_check
 
   url "https://pages.uoregon.edu/koch/texshop/texshop-64/texshop#{version.no_dots}.zip"
