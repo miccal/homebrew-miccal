@@ -6,6 +6,7 @@ cask "m-leader-key" do
 
   livecheck do
     url :url
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
     strategy :github_releases do |json|
       json.map do |release|
         next if release["draft"]
