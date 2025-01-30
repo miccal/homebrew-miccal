@@ -4,20 +4,20 @@ cask "m-leader-key" do
 
   url "https://github.com/mikker/LeaderKey.app/releases/download/v#{version}/Leader.Key.#{version}.zip"
 
-  livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)+.*)$/i)
-    strategy :github_releases do |json, regex|
-      json.map do |release|
-        next if release["draft"]
+#  livecheck do
+#    url :url
+#    regex(/^v?(\d+(?:\.\d+)+.*)$/i)
+#    strategy :github_releases do |json, regex|
+#      json.map do |release|
+#        next if release["draft"]
 
-        match = release["tag_name"]&.match(regex)
-        next if match.blank?
+#        match = release["tag_name"]&.match(regex)
+#        next if match.blank?
 
-        match[1]
-      end
-    end
-  end
+#        match[1]
+#      end
+#    end
+#  end
 
   app "Leader Key.app"
 end
