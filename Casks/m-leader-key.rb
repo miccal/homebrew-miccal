@@ -1,8 +1,12 @@
 cask "m-leader-key" do
-  version "1.6.0"
+  version "1.6.0,57"
   sha256 :no_check
 
-  url "https://github.com/mikker/LeaderKey.app/releases/download/v#{version}/Leader.Key.#{version}.zip"
+  url "https://leader-key-updates.s3.amazonaws.com/Leader%20Key.b#{version.csv.second}.zip"
+
+  livecheck do
+    cask "leader-key"
+  end
 
   app "Leader Key.app"
 end
