@@ -1,5 +1,5 @@
 cask "m-launchcontrol" do
-  version "2.7"
+  version "2.8"
   sha256 :no_check
 
   url "https://www.soma-zone.com/download/files/LaunchControl-#{version}.tar.xz"
