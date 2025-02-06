@@ -23,7 +23,8 @@ cask "m-mpv" do
       git ls-remote https://github.com/mpv-player/mpv.git HEAD
     to list the reference of the the most recent commit and pull request.
     The command
-      git ls-remote https://github.com/mpv-player/mpv.git HEAD | head -c 7 ; echo
-    will print the first seven characters of the reference, which are used as the version listed in "mpv.app" itself.
+      git ls-remote https://github.com/mpv-player/mpv.git HEAD | head -c 9 ; echo
+    will print the first nine characters of the reference, which are used at the end of the version listed in "mpv.app" itself in the format
+      mpv v{main release version}-dev-g{first nine characters of the reference}
   EOS
 end
