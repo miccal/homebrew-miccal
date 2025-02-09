@@ -2,7 +2,7 @@ cask "m-libreoffice" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "25.2.0.3"
+  version "25.2.1.1"
   sha256 :no_check
 
   # Stable:
