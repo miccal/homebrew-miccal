@@ -5,14 +5,7 @@ cask "m-pearcleaner" do
   url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner.zip"
 
   livecheck do
-    url :url
-    strategy :github_releases do |json|
-      json.map do |release|
-        next if release["draft"]
-
-        release["tag_name"]
-      end
-    end
+    cask "pearcleaner"
   end
 
   app "Pearcleaner.app"
