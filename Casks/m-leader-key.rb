@@ -4,5 +4,9 @@ cask "m-leader-key" do
 
   url "https://github.com/mikker/LeaderKey.app/releases/download/v#{version}/Leader.Key.app.zip"
 
+  livecheck do
+    cask "leader-key"
+  end
+
   app "Leader Key.app"
 end
