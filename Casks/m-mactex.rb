@@ -1,5 +1,5 @@
 cask "m-mactex" do
-  version "2024,0312,10.03.0"
+  version "2025,0308,10.04.0"
   sha256 :no_check
 
   url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
