@@ -2,7 +2,7 @@ cask "m-mactex" do
   version "2025,0308,10.04.0"
   sha256 :no_check
 
-  url "https://mirror.ctan.org/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
+  url "https://mirror.aarnet.edu.au/pub/CTAN/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
 
   livecheck do
     url "https://ctan.org/texarchive/systems/mac/mactex/"
