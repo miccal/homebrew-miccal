@@ -2,10 +2,10 @@ cask "m-mactex" do
   version "2025,0308,10.04.0"
   sha256 :no_check
 
-  url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
+  url "https://mirror.ctan.org/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
 
   livecheck do
-    url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/"
+    url "https://ctan.org/tex-archive/systems/mac/mactex/"
     strategy :page_match do |page|
       year = page.scan(/mactex[._-]v?(\d{4})\d{4}\.pkg/i)
                  .flatten
