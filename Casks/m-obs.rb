@@ -1,7 +1,7 @@
 cask "m-obs" do
   arch arm: "Apple", intel: "Intel"
 
-  version "31.0.2"
+  version "31.0.3"
   sha256 :no_check
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/OBS-Studio-#{version}-macOS-#{arch}.dmg"
