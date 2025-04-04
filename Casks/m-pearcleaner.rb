@@ -1,5 +1,5 @@
 cask "m-pearcleaner" do
-  version "4.4.0"
+  version "4.4.1"
   sha256 :no_check
 
   url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner.zip"
