@@ -10,8 +10,7 @@ cask "m-wolfram-engine" do
     strategy :header_match
   end
 
-  app "Wolfram Engine.app"
-  pkg "WolframScript.pkg"
+  installer manual: "Download Manager for Wolfram Engine #{version.major_minor}.app"
 
   caveats <<~EOS
     The Wolfram Language can be added as a JupyterLab kernel by running the command
