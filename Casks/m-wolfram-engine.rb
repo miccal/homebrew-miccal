@@ -2,10 +2,10 @@ cask "m-wolfram-engine" do
   version "14.2.1.0"
   sha256 :no_check
 
-  url "https://files.wolframcdn.com/packages/Homebrew/#{version}/WolframEngine_#{version.major_minor_patch}_MAC.dmg"
+  url "https://account.wolfram.com/dl/WolframEngine?platform=Mac"
 
   livecheck do
-    url "https://account.wolfram.com/dl/WolframEngine?platform=Mac"
+    url :url
     regex(%r{WolframEngine/(\d+(?:\.\d+)+)}i)
     strategy :header_match
   end
