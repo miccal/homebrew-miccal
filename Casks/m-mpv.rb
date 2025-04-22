@@ -1,10 +1,8 @@
 cask "m-mpv" do
-  arch arm: "15-arm", intel: "13-intel"
-
   version "2025.04.21"
   sha256 :no_check
 
-  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{arch}.zip"
+  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-15-arm.zip"
 
   livecheck do
     url "https://api.github.com/repos/mpv-player/mpv/branches/master"
