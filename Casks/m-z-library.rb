@@ -5,8 +5,9 @@ cask "m-z-library" do
   url "https://s3proxy.cdn-zlib.sk/te_public_files/soft/macos/zlibrary-setup-latest.dmg"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    skip "Must use :extract_plist strategy"
+    #url :url
+    #strategy :extract_plist
   end
 
   app "Z-Library.app"
