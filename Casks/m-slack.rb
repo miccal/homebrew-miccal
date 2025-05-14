@@ -1,5 +1,5 @@
 cask "m-slack" do
-  version "4.44.59"
+  version "4.44.60"
   sha256 :no_check
 
   url "https://downloads.slack-edge.com/desktop-releases/mac/arm64/#{version}/Slack-#{version}-macOS.dmg"
