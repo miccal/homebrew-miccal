@@ -1,5 +1,5 @@
 cask "m-rectangle-pro" do
-  version "3.51"
+  version "3.53"
   sha256 :no_check
 
   url "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%20#{version}.dmg"
