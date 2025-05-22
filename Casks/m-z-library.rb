@@ -7,7 +7,7 @@ cask "m-z-library" do
   livecheck do
     #url :url
     #strategy :extract_plist
-    url "https://go-to-library.sk"
+    url "https://go-to-library.sk/"
     regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
   end
 
