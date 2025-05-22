@@ -5,9 +5,10 @@ cask "m-z-library" do
   url "https://s3proxy.cdn-zlib.sk/te_public_files/soft/macos/zlibrary-setup-latest.dmg"
 
   livecheck do
-    skip "Needs the :extract_plist strategy"
     #url :url
     #strategy :extract_plist
+    url "https://go-to-library.sk"
+    regex(%r{MacOS(.+\n+)+.+Version\s<b>(\d+(?:\.\d+)+)</b>}i)
   end
 
   app "Z-Library.app"
