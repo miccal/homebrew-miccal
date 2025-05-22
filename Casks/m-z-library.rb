@@ -8,7 +8,7 @@ cask "m-z-library" do
     #url :url
     #strategy :extract_plist
     url "https://go-to-library.sk"
-    regex(%r{macos(?:.+\n+)+.+version\s<b>(\d+(?:\.\d+)+)</b>}i)
+    regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
   end
 
   app "Z-Library.app"
