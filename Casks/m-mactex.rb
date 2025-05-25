@@ -5,7 +5,8 @@ cask "m-mactex" do
   url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
 
   livecheck do
-    url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/"
+    #url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/"
+    url "https://ctan.org/texarchive/systems/mac/mactex/"
     strategy :page_match do |page|
       year = page.scan(/mactex[._-]v?(\d{4})\d{4}\.pkg/i)
                  .flatten
