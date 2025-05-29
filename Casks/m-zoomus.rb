@@ -1,5 +1,5 @@
 cask "m-zoomus" do
-  version "6.4.10.56141"
+  version "6.4.12.56699"
   sha256 :no_check
 
   url "https://cdn.zoom.us/prod/#{version}/arm64/zoomusInstallerFull.pkg"
