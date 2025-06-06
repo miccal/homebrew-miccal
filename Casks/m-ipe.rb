@@ -9,14 +9,4 @@ cask "m-ipe" do
   end
 
   app "Ipe.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Ipe.app"],
-                   sudo: true
-  end
-
-  caveats <<~EOS
-    The postflight block removes the extended attribute "com.apple.quarantine" of #{token}.
-  EOS
 end
