@@ -4,5 +4,5 @@ cask "m-sentinel" do
 
   url "https://github.com/alienator88/Sentinel/releases/download/#{version}/Sentinel.zip"
 
-  app "Pearcleaner.app"
+  app "Sentinel.app"
 end
