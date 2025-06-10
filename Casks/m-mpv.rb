@@ -1,5 +1,5 @@
 cask "m-mpv" do
-  version "2025.06.09"
+  version "2025.06.10"
   sha256 :no_check
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-15-arm.zip"
