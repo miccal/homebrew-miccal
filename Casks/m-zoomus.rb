@@ -17,7 +17,7 @@ cask "m-zoomus" do
                      "/Library/LaunchAgents/us.zoom.updater.plist",
                      "/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist",
                    ],
-                   sudo: true,
+                   sudo:         true,
                    must_succeed: false
   end
 
