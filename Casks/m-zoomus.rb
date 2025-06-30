@@ -12,7 +12,7 @@ cask "m-zoomus" do
 
   postflight do
     system_command "/bin/rm",
-                   args: [
+                   args:         [
                      "/Library/LaunchAgents/us.zoom.updater.login.check.plist",
                      "/Library/LaunchAgents/us.zoom.updater.plist",
                      "/Library/LaunchDaemons/us.zoom.ZoomDaemon.plist",
