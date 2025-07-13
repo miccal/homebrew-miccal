@@ -1,4 +1,4 @@
-cask "m-ipe" do
+cask "m-batt" do
   version "7.2.29"
   sha256 :no_check
 
