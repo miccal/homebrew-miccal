@@ -1,5 +1,5 @@
 cask "m-libreoffice" do
-  version "25.8.0.3"
+  version "25.8.0.4"
   sha256 :no_check
 
   # Stable:
