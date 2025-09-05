@@ -1,5 +1,5 @@
 cask "m-batt" do
-  version "0.5.1"
+  version "0.5.2"
   sha256 :no_check
 
   url "https://github.com/charlie0129/batt/releases/download/v#{version}/batt-v#{version}.dmg"
