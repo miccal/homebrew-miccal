@@ -1,5 +1,5 @@
 cask "m-processspy" do
-  version "1.8.6"
+  version "1.8.7"
   sha256 :no_check
 
   url "https://process-spy.app/archive/ProcessSpy_#{version}.zip"
