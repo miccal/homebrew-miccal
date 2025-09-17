@@ -1,5 +1,5 @@
 cask "m-onedrive" do
-  version "25.130.0706.0004"
+  version "25.159.0817.0003"
   sha256 :no_check
 
   url "https://oneclient.sfx.ms/Mac/Installers/#{version}/universal/OneDrive.pkg"
