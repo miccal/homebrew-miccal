@@ -1,5 +1,5 @@
 cask "m-microsoft-teams" do
-  version "25255.703.3981.5698"
+  version "25275.2602.4021.9366"
   sha256 :no_check
 
   url "https://statics.teams.cdn.office.net/production-osx/#{version}/MicrosoftTeams.pkg"
