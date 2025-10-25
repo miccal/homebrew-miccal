@@ -1,5 +1,5 @@
 cask "m-proxyman" do
-  version "6.0.1,60001"
+  version "6.0.2,60002"
   sha256 :no_check
 
   url "https://download.proxyman.com/#{version.csv.second}/Proxyman_#{version.csv.first}.dmg"
