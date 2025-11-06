@@ -6,6 +6,7 @@ cask "m-microsoft-365-copilot" do
 
   livecheck do
     url "https://aka.ms/M365CopilotForMac"
+    regex(/microsoft[._-]365[._-]copilot[._-]universal[._-]v?(\d+(?:\.\d+)+)[._-]installer\.pkg/i)
     strategy :header_match
   end
 
