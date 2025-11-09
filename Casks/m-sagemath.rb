@@ -1,6 +1,5 @@
 cask "m-sagemath" do
   version "10.7,2.7.0"
-  sha256 :no_check
 
   url "https://github.com/3-manifolds/Sage_macOS/releases/download/v#{version.csv.second}/SageMath-#{version.csv.first}_arm64.dmg"
 
