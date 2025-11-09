@@ -1,6 +1,5 @@
 cask "m-little-snitch" do
   version "6.3.2"
-  sha256 :no_check
 
   url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch#{"/nightly" if version.csv.second}/LittleSnitch-#{version.csv.first}#{"-nightly-(#{version.csv.second})" if version.csv.second}.dmg"
 
