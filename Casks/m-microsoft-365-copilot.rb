@@ -1,6 +1,5 @@
 cask "m-microsoft-365-copilot" do
   version "1.2511.0301"
-  sha256 :no_check
 
   url "https://m365copilotformac.blob.core.windows.net/releases/Microsoft_365_Copilot_universal_#{version}_Installer.pkg"
 
