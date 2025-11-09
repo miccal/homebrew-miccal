@@ -1,6 +1,5 @@
 cask "m-wolfram-engine" do
   version "14.3.0.0"
-  sha256 :no_check
 
   url "https://account.wolfram.com/dl/WolframEngine?platform=Mac"
 
