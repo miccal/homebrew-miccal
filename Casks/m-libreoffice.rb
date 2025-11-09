@@ -1,6 +1,5 @@
 cask "m-libreoffice" do
   version "25.8.3.2"
-  sha256 :no_check
 
   # Stable:
   #url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/aarch64/LibreOffice_#{version}_MacOS_aarch64.dmg"
