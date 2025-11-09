@@ -1,6 +1,5 @@
 cask "m-etrecheckpro" do
   version "6.8.12"
-  sha256 :no_check
 
   url "https://cdn.etrecheck.com/EtreCheckPro.zip"
 
