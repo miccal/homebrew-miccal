@@ -1,7 +1,7 @@
 cask "m-mpv" do
   version "2025.11.10"
 
-  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-15-arm.zip"
+  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-26-arm.zip"
 
   livecheck do
     url "https://api.github.com/repos/mpv-player/mpv/branches/master"
