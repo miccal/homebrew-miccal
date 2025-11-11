@@ -1,7 +1,7 @@
 cask "m-apparency" do
   version "3.0"
 
-  url "https://mothersruin.com/software/downloads/Apparency.dmg"
+  url "https://www.mothersruin.com/software/archives/Apparency-#{version}.dmg"
 
   livecheck do
     cask "apparency"
