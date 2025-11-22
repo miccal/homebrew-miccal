@@ -1,5 +1,5 @@
 cask "m-pearcleaner" do
-  version "5.4.1"
+  version "5.4.2"
 
   url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner.dmg"
 
