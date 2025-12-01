@@ -1,5 +1,5 @@
 cask "m-apparency" do
-  version "3.0"
+  version "3.1"
 
   url "https://www.mothersruin.com/software/archives/Apparency-#{version}.dmg"
 
