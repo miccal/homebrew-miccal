@@ -1,5 +1,5 @@
 cask "m-obs" do
-  version "32.0.2"
+  version "32.0.3"
 
   url "https://github.com/obsproject/obs-studio/releases/download/#{version}/OBS-Studio-#{version}-macOS-Apple.dmg"
 
