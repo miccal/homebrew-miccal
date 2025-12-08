@@ -1,7 +1,7 @@
 cask "m-leader-key" do
   version "1.17.3"
 
-  url "https://github.com/mikker/LeaderKey.app/releases/download/v#{version}/Leader.Key.app.zip"
+  url "https://github.com/mikker/LeaderKey/releases/download/v#{version}/Leader.Key.app.zip"
 
   livecheck do
     cask "leader-key"
