@@ -6,8 +6,11 @@ cask "m-z-library" do
   livecheck do
     #url :url
     #strategy :extract_plist
-    url "https://library-access.sk"
-    regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
+    #url "https://library-access.sk"
+    #regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
+    #url "https://en.z-library.sk/z-access#desktop_app_tab"
+    #regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
+    skip "Check https://library-access.sk in browser"
   end
 
   app "Z-Library.app"
