@@ -4,11 +4,8 @@ cask "m-mpv" do
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-26-arm.zip"
 
   livecheck do
-    url "https://api.github.com/repos/mpv-player/mpv/branches/master"
-    strategy :json do |json|
-      date = json.dig("commit", "commit", "committer", "date")
-      Date.parse(date).strftime("%Y.%m.%d").to_s
-    end
+    url "https://nightly.link/mpv-player/mpv/workflows/build/master"
+    regex(/mpv[._-]v(.+)[._-]macos[._-]26[._-]arm\.zip/i)
   end
 
   app "mpv.app"
