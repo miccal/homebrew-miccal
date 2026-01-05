@@ -5,7 +5,7 @@ cask "m-mpv" do
 
   livecheck do
     url "https://nightly.link/mpv-player/mpv/workflows/build/master"
-    regex(/mpv[._-]v(.+)[._-]macos[._-]26[._-]arm\.zip\"/i)
+    regex(/mpv[._-]v(.+)[._-]macos[._-]26[._-]arm\.zip"/i)
   end
 
   app "mpv.app"
