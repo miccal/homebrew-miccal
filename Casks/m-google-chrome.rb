@@ -1,5 +1,5 @@
 cask "m-google-chrome" do
-  version "143.0.7499.170"
+  version "143.0.7499.193"
 
   url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg"
 
