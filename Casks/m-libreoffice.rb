@@ -1,12 +1,12 @@
 cask "m-libreoffice" do
-  version "26.2.0.0.beta1"
+  version "26.2.0.1"
 
   # Stable:
   #url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/aarch64/LibreOffice_#{version}_MacOS_aarch64.dmg"
   # RC:
-  #url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/aarch64/LibreOffice_#{version}_MacOS_aarch64.dmg"
+  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/aarch64/LibreOffice_#{version}_MacOS_aarch64.dmg"
   # Dev:
-  url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/aarch64/LibreOfficeDev_#{version}_MacOS_aarch64.dmg"
+  #url "https://download.documentfoundation.org/libreoffice/testing/#{version.major_minor_patch}/mac/aarch64/LibreOfficeDev_#{version}_MacOS_aarch64.dmg"
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/testing/"
@@ -29,7 +29,7 @@ cask "m-libreoffice" do
   end
 
   # Stable, RC:
-  #app "LibreOffice.app"
+  app "LibreOffice.app"
   # Dev:
-  app "LibreOfficeDev.app", target: "LibreOffice.app"
+  #app "LibreOfficeDev.app", target: "LibreOffice.app"
 end
