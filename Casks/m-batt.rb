@@ -8,6 +8,4 @@ cask "m-batt" do
   end
 
   app "batt.app"
-
-  uninstall on_upgrade: :quit
 end
