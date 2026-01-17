@@ -15,6 +15,4 @@ cask "m-keepingyouawake" do
   end
 
   app "KeepingYouAwake.app"
-
-  uninstall on_upgrade: :quit
 end
