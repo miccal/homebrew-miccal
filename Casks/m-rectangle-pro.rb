@@ -8,4 +8,6 @@ cask "m-rectangle-pro" do
   end
 
   app "Rectangle Pro.app"
+
+  uninstall on_upgrade: :quit
 end
