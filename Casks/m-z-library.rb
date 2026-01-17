@@ -10,7 +10,7 @@ cask "m-z-library" do
     #regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
     #url "https://en.z-library.sk/z-access#desktop_app_tab"
     url "https://en.z-library.sk/z-access#desktop_app_tab",
-        user_agent: :fake
+        user_agent: :curl
     regex(%r{macos(?:.+\n+)+\s+version\s+<b>(\d+(?:\.\d+)+)</b>}i)
     #skip "Check https://en.z-library.sk/z-access#desktop_app_tab"
   end
