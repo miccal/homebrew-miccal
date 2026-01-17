@@ -8,4 +8,6 @@ cask "m-leader-key" do
   end
 
   app "Leader Key.app"
+
+  uninstall on_upgrade: :quit
 end
