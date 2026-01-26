@@ -1,5 +1,5 @@
 cask "m-sagemath" do
-  version "10.8,2.8.3"
+  version "10.8,2.8.4"
 
   url "https://github.com/3-manifolds/Sage_macOS/releases/download/v#{version.csv.second}/SageMath-#{version.csv.first}_arm64.dmg"
 
