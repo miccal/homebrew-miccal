@@ -1,5 +1,5 @@
 cask "m-tex-live-utility" do
-  version "1.55b4"
+  version "1.55"
 
   url "https://github.com/amaxwell/tlutility/releases/download/#{version}/TeX.Live.Utility.app-#{version}.zip"
 
