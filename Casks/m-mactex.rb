@@ -1,7 +1,8 @@
 cask "m-mactex" do
   version "2026,0301,10.06.0"
 
-  url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
+  #url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/mactex-#{version.csv.first}#{version.csv.second}.pkg"
+  url "https://mirrors.ctan.org/systems/mac/mactex/mactex-{version.csv.first}#{version.csv.second}.pkg"
 
   livecheck do
     #url "https://au.mirrors.cicku.me/ctan/systems/mac/mactex/"
