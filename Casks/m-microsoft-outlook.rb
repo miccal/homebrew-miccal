@@ -1,12 +1,12 @@
 cask "m-microsoft-outlook" do
-  version "16.107.26031524"
+  version "16.107.26032211"
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_#{version}_Installer.pkg"
 
   livecheck do
-    #cask "microsoft-outlook"
-    url "https://learn.microsoft.com/en-us/officeupdates/update-history-office-for-mac"
-    regex(/Microsoft[._-]Outlook[._-](\d+(?:\.\d+)+)[._-](?:Updater|Installer)\.pkg/i)
+    cask "microsoft-outlook"
+    #url "https://learn.microsoft.com/en-us/officeupdates/update-history-office-for-mac"
+    #regex(/Microsoft[._-]Outlook[._-](\d+(?:\.\d+)+)[._-](?:Updater|Installer)\.pkg/i)
   end
 
   pkg "Microsoft_Outlook_#{version}_Installer.pkg",
