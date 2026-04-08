@@ -4,7 +4,8 @@ cask "m-dropbox" do
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&rtoken=&type=full&arch=arm64"
 
   livecheck do
-    cask "dropbox@beta"
+    url "https://community.dropbox.com/en/categories/dropbox-desktop-client-builds"
+    regex(/Beta\sBuild\s(\d+(?:\.\d+)+)/i)
   end
 
   app "Dropbox.app"
