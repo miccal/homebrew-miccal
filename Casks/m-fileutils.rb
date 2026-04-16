@@ -5,7 +5,7 @@ cask "m-fileutils" do
 
   livecheck do
     url "https://fileutils.com/updates/NoSandbox/appcast.php"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   app "FileUtils.app"
