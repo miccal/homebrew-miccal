@@ -4,8 +4,8 @@ cask "m-fileutils" do
   url "https://fileutils.com/updates/NoSandbox/FileUtils.dmg"
 
   livecheck do
-    url "https://fileutils.com/release-notes"
-    regex(/Version\s(\d+(?:\.\d+)+)/i)
+    url "https://fileutils.com/updates/NoSandbox/appcast.php"
+    strategy :sparkle
   end
 
   app "FileUtils.app"
