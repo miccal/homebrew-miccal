@@ -1,7 +1,7 @@
 cask "m-microsoft-365-copilot" do
   version "1.2604.2701"
 
-  url "https://m365copilotformac.blob.core.windows.net/releases/Microsoft_365_Copilot_universal_#{version}_Installer.pkg"
+  url "https://res-1.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_Copilot_universal_#{version}_Installer.pkg"
 
   livecheck do
     url "https://aka.ms/M365CopilotForMac"
