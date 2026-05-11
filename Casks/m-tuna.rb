@@ -5,8 +5,13 @@ cask "m-tuna" do
 
   livecheck do
     url "https://tunaformac.com/download/latest"
-    strategy :header_match
     regex(/tuna[._-]v?(\d+(?:\.\d+)+)[._-]v?(\d+)\.zip/i)
+    strategy :header_match do |headers, regex|
+      match = headers["location"]&.match(regex)
+      next if match.blank?
+
+      "#{match[1]},#{match[2]}"
+    end
   end
 
   app "Tuna.app"
