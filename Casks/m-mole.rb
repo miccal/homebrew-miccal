@@ -4,8 +4,7 @@ cask "m-mole" do
   url "https://mole.fit/Mole.dmg"
 
   livecheck do
-    url "https://mole.fit/appcast.xml"
-    strategy :sparkle, &:short_version
+    cask "mole-app"
   end
 
   app "Mole.app"
