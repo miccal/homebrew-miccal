@@ -1,7 +1,10 @@
 cask "m-fileutils" do
-  version "1.6.1"
+  version "1.6.2b1"
 
-  url "https://fileutils.com/updates/NoSandbox/FileUtils.dmg"
+  # Stable:
+  #url "https://fileutils.com/updates/NoSandbox/FileUtils.dmg"
+  # Beta:
+  url "https://fileutils.com/updates/NoSandbox/FileUtils_beta.dmg"
 
   livecheck do
     url "https://fileutils.com/updates/NoSandbox/appcast.php"
