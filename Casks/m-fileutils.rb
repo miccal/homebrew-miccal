@@ -1,5 +1,5 @@
 cask "m-fileutils" do
-  version "1.6.1"
+  version "1.6.2b1"
 
   url "https://fileutils.com/updates/NoSandbox/FileUtils.dmg"
 
