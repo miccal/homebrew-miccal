@@ -3,9 +3,5 @@ cask "m-pearcleaner" do
 
   url "https://github.com/alienator88/Pearcleaner/releases/download/#{version}/Pearcleaner.dmg"
 
-  livecheck do
-    cask "pearcleaner"
-  end
-
   app "Pearcleaner.app"
 end
