@@ -3,9 +3,5 @@ cask "m-batt" do
 
   url "https://github.com/charlie0129/batt/releases/download/v#{version}/batt-v#{version}.dmg"
 
-  livecheck do
-    formula "batt"
-  end
-
   app "batt.app"
 end
