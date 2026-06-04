@@ -5,8 +5,6 @@ cask "m-microsoft-outlook" do
 
   livecheck do
     cask "microsoft-outlook"
-    #url "https://learn.microsoft.com/en-us/officeupdates/update-history-office-for-mac"
-    #regex(/Microsoft[._-]Outlook[._-](\d+(?:\.\d+)+)[._-](?:Updater|Installer)\.pkg/i)
   end
 
   pkg "Microsoft_Outlook_#{version}_Installer.pkg",
