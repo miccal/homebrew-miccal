@@ -1,5 +1,5 @@
 cask "m-microsoft-365-copilot" do
-  version "1.2605.2501"
+  version "1.2606.0101"
 
   url "https://res.cdn.office.net/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_Copilot_universal_#{version}_Installer.pkg"
 
