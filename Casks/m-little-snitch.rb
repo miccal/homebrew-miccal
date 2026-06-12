@@ -1,5 +1,5 @@
 cask "m-little-snitch" do
-  version "6.4,7207"
+  version "6.5,7210"
 
   url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch#{"/nightly" if version.csv.second}/LittleSnitch-#{version.csv.first}#{"-nightly-(#{version.csv.second})" if version.csv.second}.dmg"
 
