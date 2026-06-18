@@ -1,5 +1,5 @@
 cask "m-whatcable" do
-  version "1.0.5"
+  version "1.0.6"
 
   url "https://github.com/darrylmorley/whatcable/releases/download/v#{version}/WhatCable.zip"
 
