@@ -1,5 +1,5 @@
 cask "m-zoomus" do
-  version "7.0.5.81138"
+  version "7.1.0.83064"
 
   url "https://cdn.zoom.us/prod/#{version}/arm64/zoomusInstallerFull.pkg"
 
