@@ -8,8 +8,7 @@ cask "m-whatcable" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/WhatCable.app",
-                                  "#{staged_path}/whatcable"],
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/WhatCable.app"],
                    sudo:         false,
                    must_succeed: false,
                    print_stderr: false
