@@ -11,4 +11,12 @@ cask "m-mole" do
   end
 
   app "Mole.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-d", "com.apple.quarantine", "#{staged_path}/Mole.app"],
+      sudo: false,
+      must_succeed: false,
+      print_stderr: false
+  end
 end
