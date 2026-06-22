@@ -1,5 +1,5 @@
 cask "m-processspy" do
-  version "1.13.4"
+  version "1.14.0"
 
   url "https://process-spy.app/archive/ProcessSpy_#{version}.dmg"
 
