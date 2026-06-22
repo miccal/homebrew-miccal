@@ -1,5 +1,5 @@
 cask "m-mpv" do
-  version "0.41.0-dev-g315950088-27693096793"
+  version "0.41.0-dev-g1bcc17a7b-27913674185"
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-v#{version}-macos-26-arm.zip"
 
@@ -9,4 +9,12 @@ cask "m-mpv" do
   end
 
   app "mpv.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-d", "com.apple.quarantine", "#{staged_path}/mpv.app"],
+      sudo: false,
+      must_succeed: false,
+      print_stderr: false
+  end
 end
