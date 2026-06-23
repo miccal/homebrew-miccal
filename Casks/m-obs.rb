@@ -16,6 +16,14 @@ cask "m-obs" do
 
   app "OBS.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/OBS.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
+
   caveats <<~EOS
     #{token} should be uninstalled manually by trashing the "OBS.app" bundle and rebooting macOS to ensure that the system extension
       com.obsproject.obs-studio.mac-camera-extension
