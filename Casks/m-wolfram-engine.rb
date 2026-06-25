@@ -1,5 +1,5 @@
 cask "m-wolfram-engine" do
-  version "14.3.0.0"
+  version "15.0.0.0"
 
   url "https://account.wolfram.com/dl/WolframEngine?platform=Mac"
 
