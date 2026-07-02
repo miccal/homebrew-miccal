@@ -18,4 +18,15 @@ cask "m-tor-browser" do
   #app "Tor Browser.app"
   # Alpha:
   app "Tor Browser Alpha.app", target: "Tor Browser.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   # Stable"
+                   #args:         ["-d", "com.apple.quarantine", "#{staged_path}/Tor Browser.app"],
+                   # Alpha:
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Tor Browser Alpha.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
 end
