@@ -1,5 +1,5 @@
 cask "m-mpv" do
-  version "0.41.0-dev-g99b4c12cc-28489979942"
+  version "0.41.0-dev-g4c220ffd9-28826186115"
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-v#{version}-macos-26-arm.zip"
 
