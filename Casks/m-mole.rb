@@ -1,5 +1,5 @@
 cask "m-mole" do
-  version "1.9.0"
+  version "1.10.0"
 
   # Stable:
   url "https://mole.fit/Mole.dmg"
