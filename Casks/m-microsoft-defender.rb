@@ -1,5 +1,5 @@
 cask "m-microsoft-defender" do
-  version "101.26042.0020"
+  version "101.26052.0016"
 
   url "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Defender_#{version}_Individuals_Installer.pkg"
 
