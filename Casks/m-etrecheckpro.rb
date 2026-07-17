@@ -8,4 +8,12 @@ cask "m-etrecheckpro" do
   end
 
   app "EtreCheckPro.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/EtreCheckPro.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
 end
