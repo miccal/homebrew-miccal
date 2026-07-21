@@ -1,5 +1,5 @@
 cask "m-batt" do
-  version "0.7.5"
+  version "0.8.0"
 
   url "https://github.com/charlie0129/batt/releases/download/v#{version}/batt-v#{version}.dmg"
 
