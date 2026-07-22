@@ -8,4 +8,12 @@ cask "m-mathpix-snipping-tool" do
   end
 
   app "Mathpix Snipping Tool.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Mathpix Snipping Tool.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
 end
