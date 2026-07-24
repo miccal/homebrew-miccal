@@ -1,5 +1,5 @@
 cask "m-dropbox" do
-  version "264.3.3264"
+  version "264.3.3280"
 
   url "https://www.dropbox.com/download?build=#{version}&plat=mac&rtoken=&type=full&arch=arm64"
 
