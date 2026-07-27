@@ -1,5 +1,5 @@
 cask "m-mathpix-snipping-tool" do
-  version "3.4.19.12"
+  version "3.4.20.2"
 
   url "https://mathpix.com/dmg/SnippingTool-v#{version}.dmg"
 
