@@ -1,5 +1,5 @@
 cask "m-rectangle-pro" do
-  version "3.80"
+  version "3.82"
 
   url "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%20#{version}.dmg"
 
