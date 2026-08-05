@@ -1,7 +1,7 @@
 cask "m-suspicious-package" do
-  version "4.7,1415"
+  version "4.7"
 
-  url "https://www.mothersruin.com/software/downloads/SuspiciousPackage.dmg"
+  url "https://www.mothersruin.com/software/archives/SuspiciousPackage-#{version}.dmg"
 
   livecheck do
     cask "suspicious-package"
