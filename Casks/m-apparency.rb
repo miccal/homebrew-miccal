@@ -8,4 +8,11 @@ cask "m-apparency" do
   end
 
   app "Apparency.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Apparency.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
 end
