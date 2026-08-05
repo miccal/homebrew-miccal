@@ -15,4 +15,5 @@ cask "m-apparency" do
                    sudo:         false,
                    must_succeed: false,
                    print_stderr: false
+  end
 end
