@@ -9,4 +9,12 @@ cask "m-bramble" do
   end
 
   app "Bramble.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Bramble.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
 end
