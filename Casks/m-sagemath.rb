@@ -16,6 +16,14 @@ cask "m-sagemath" do
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
   ]
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/SageMath-#{version.csv.first.dots_to_hyphens}.app"],
+                   sudo:         false,
+                   must_succeed: false,
+                   print_stderr: false
+  end
+
   caveats <<~EOS
     Remove the JupyterLab kernel for the previous version of #{token} using sudo rm -r.
     Check the current list of JupyterLab kernels by running the command
