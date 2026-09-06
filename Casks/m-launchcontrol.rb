@@ -9,11 +9,11 @@ cask "m-launchcontrol" do
 
   app "LaunchControl.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/LaunchControl.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/LaunchControl.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 end
