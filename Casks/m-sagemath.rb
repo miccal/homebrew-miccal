@@ -16,12 +16,12 @@ cask "m-sagemath" do
     "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
   ]
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/SageMath-#{version.csv.first.dots_to_hyphens}.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/SageMath-#{version.csv.first.dots_to_hyphens}.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 
   caveats <<~EOS
