@@ -18,7 +18,7 @@ cask "m-sagemath" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/SageMath-#{version.csv.first.dots_to_hyphens}.app"],
+        args:         ["-d", "com.apple.quarantine", "/Applications/SageMath-10-9.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
