@@ -10,11 +10,11 @@ cask "m-mpv" do
 
   app "mpv.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/mpv.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/mpv.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 end
