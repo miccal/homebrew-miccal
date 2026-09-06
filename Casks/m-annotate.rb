@@ -7,7 +7,7 @@ cask "m-annotate" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "#{staged_path}/Annotate.app"],
+        args:         ["-d", "com.apple.quarantine", "/Applications/Annotate.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
