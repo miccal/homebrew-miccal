@@ -11,7 +11,7 @@ cask "m-processspy" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/ProcessSpy.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/ProcessSpy.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
