@@ -11,7 +11,7 @@ cask "m-proxyman" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/Proxyman.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Proxyman.app"],
         sudo:         true,
         must_succeed: false,
         print_stderr: false
