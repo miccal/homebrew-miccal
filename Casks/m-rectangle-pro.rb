@@ -9,11 +9,11 @@ cask "m-rectangle-pro" do
 
   app "Rectangle Pro.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Rectangle Pro.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/Rectangle Pro.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 end
