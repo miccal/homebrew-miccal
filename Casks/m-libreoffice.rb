@@ -33,14 +33,12 @@ cask "m-libreoffice" do
   # Dev:
   #app "LibreOfficeDev.app", target: "LibreOffice.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   # Stable, RC:
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/LibreOffice.app"],
-                   # Dev:
-                   #args:         ["-d", "com.apple.quarantine", "#{staged_path}/LibreOfficeDev.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        # Stable, RC:
+        args:         ["-d", "com.apple.quarantine", "/Applications/LibreOffice.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 end
