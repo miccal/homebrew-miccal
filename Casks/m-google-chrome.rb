@@ -5,11 +5,11 @@ cask "m-google-chrome" do
 
   app "Google Chrome.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/Google Chrome.app"],
-                   sudo:         true,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/Google Chrome.app"],
+        sudo:         true,
+        must_succeed: false,
+        print_stderr: false
   end
 end
