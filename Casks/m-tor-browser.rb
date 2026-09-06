@@ -21,7 +21,10 @@ cask "m-tor-browser" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser.app"],
+        # Stable"
+        #args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser.app"],
+        # Alpha:
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser Alpha.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
