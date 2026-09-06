@@ -7,7 +7,7 @@ cask "m-batt" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/batt.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/batt.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
