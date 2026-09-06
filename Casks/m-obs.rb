@@ -18,7 +18,7 @@ cask "m-obs" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/OBS.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/OBS.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
