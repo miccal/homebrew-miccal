@@ -9,11 +9,11 @@ cask "m-processspy" do
 
   app "ProcessSpy.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-d", "com.apple.quarantine", "#{staged_path}/ProcessSpy.app"],
-                   sudo:         false,
-                   must_succeed: false,
-                   print_stderr: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "/Applications/ProcessSpy.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
   end
 end
