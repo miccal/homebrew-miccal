@@ -11,7 +11,7 @@ cask "m-rectangle-pro" do
 
   postflight_steps do
     run "/usr/bin/xattr",
-        args:         ["-d", "com.apple.quarantine", "/Applications/Rectangle Pro.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Rectangle Pro.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
