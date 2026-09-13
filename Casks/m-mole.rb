@@ -1,10 +1,7 @@
 cask "m-mole" do
-  version "1.13.0"
+  version "1.14.0"
 
-  # Stable:
   url "https://mole.fit/Mole.dmg"
-  # Preview:
-  #url "https://mole.fit/Mole-preview.dmg"
 
   livecheck do
     cask "mole-app"
