@@ -1,5 +1,5 @@
 cask "m-suspicious-package" do
-  version "4.7"
+  version "4.8"
 
   url "https://www.mothersruin.com/software/archives/SuspiciousPackage-#{version}.dmg"
 
