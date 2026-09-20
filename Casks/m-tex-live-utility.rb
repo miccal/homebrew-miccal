@@ -15,4 +15,12 @@ cask "m-tex-live-utility" do
   end
 
   app "TeX Live Utility.app"
+
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/TeX Live Utility.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
+  end
 end
