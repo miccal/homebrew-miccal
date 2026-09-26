@@ -1,5 +1,5 @@
 cask "m-annotate" do
-  version "1.6.0"
+  version "1.7.0"
 
   url "https://github.com/epilande/Annotate/releases/download/v#{version}/Annotate-#{version}.dmg"
 
