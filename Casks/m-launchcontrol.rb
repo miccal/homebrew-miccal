@@ -1,5 +1,5 @@
 cask "m-launchcontrol" do
-  version "2.11"
+  version "2.12"
 
   url "https://www.soma-zone.com/download/files/LaunchControl-#{version}.tar.xz"
 
