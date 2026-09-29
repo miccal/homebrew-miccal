@@ -1,5 +1,5 @@
 cask "m-tuna" do
-  version "0.102,2169"
+  version "0.103,2187"
 
   url "https://tunaformac.com/download/releases/#{version.csv.second}"
 
