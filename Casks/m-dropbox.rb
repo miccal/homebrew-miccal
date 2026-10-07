@@ -9,4 +9,12 @@ cask "m-dropbox" do
   end
 
   app "Dropbox.app"
+
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Dropbox.app"],
+        sudo:         true,
+        must_succeed: false,
+        print_stderr: false
+  end
 end
