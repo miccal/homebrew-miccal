@@ -1,5 +1,5 @@
 cask "m-removemacai" do
-  version "1.0.3"
+  version "1.1.0"
 
   url "https://github.com/omlahore/RemoveMacAI/releases/download/v#{version}/RemoveMacAI.zip"
 
