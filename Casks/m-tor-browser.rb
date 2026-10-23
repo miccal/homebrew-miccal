@@ -1,5 +1,5 @@
 cask "m-tor-browser" do
-  version "16.0a14"
+  version "15.0.26"
 
   url "https://dist.torproject.org/torbrowser/#{version}/tor-browser-macos-#{version}.dmg"
 
@@ -15,16 +15,16 @@ cask "m-tor-browser" do
   end
 
   # Stable:
-  #app "Tor Browser.app"
+  app "Tor Browser.app"
   # Alpha:
-  app "Tor Browser Alpha.app", target: "Tor Browser.app"
+  #app "Tor Browser Alpha.app", target: "Tor Browser.app"
 
   postflight_steps do
     run "/usr/bin/xattr",
         # Stable"
-        #args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser.app"],
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser.app"],
         # Alpha:
-        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser Alpha.app"],
+        #args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Tor Browser Alpha.app"],
         sudo:         false,
         must_succeed: false,
         print_stderr: false
