@@ -12,7 +12,7 @@ cask "m-mole" do
   postflight_steps do
     run "/usr/bin/xattr",
         args:         ["-d", "com.apple.quarantine", "{{staged_path}}/Mole.app"],
-        sudo:         true,
+        sudo:         false,
         must_succeed: false,
         print_stderr: false
   end
