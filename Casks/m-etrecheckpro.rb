@@ -1,5 +1,5 @@
 cask "m-etrecheckpro" do
-  version "6.8.17"
+  version "6.8.18"
 
   url "https://cdn.etrecheck.com/EtreCheckPro.zip"
 
