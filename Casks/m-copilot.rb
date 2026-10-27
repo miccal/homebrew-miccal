@@ -9,5 +9,5 @@ cask "m-copilot" do
     strategy :header_match
   end
 
-  pkg "Copilot_#{version}.pkg"
+  pkg "Copilot-#{version}.pkg"
 end
