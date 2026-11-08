@@ -1,5 +1,5 @@
 cask "m-copilot" do
-  version "156.0.4314.41"
+  version "157.0.4341.41"
 
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/dde69ffb-af77-4d45-96a4-41945ba0a036/Copilot-#{version}.pkg"
 
