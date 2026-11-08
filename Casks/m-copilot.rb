@@ -14,5 +14,5 @@ cask "m-copilot" do
     end
   end
 
-  pkg "Copilot-#{version}.pkg"
+  pkg "Copilot-#{version.csv.first}.pkg"
 end
