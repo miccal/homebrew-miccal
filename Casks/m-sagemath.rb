@@ -10,12 +10,6 @@ cask "m-sagemath" do
   app "SageMath-#{version.csv.first.dots_to_hyphens}.app"
   pkg "Recommended_#{version.csv.first.dots_to_underscores}.pkg"
 
-  uninstall pkgutil: [
-    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
-    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
-    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
-  ]
-
   postflight_steps do
     run "/usr/bin/xattr",
         args:         ["-d", "com.apple.quarantine",
@@ -24,6 +18,12 @@ cask "m-sagemath" do
         must_succeed: false,
         print_stderr: false
   end
+
+  uninstall pkgutil: [
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.bin",
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.share",
+    "org.computop.SageMath.#{version.csv.first.dots_to_underscores}.texlive",
+  ]
 
   caveats <<~EOS
     Remove the JupyterLab kernel for the previous version of #{token} using sudo rm -r.
