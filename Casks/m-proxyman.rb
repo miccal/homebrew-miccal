@@ -1,5 +1,5 @@
 cask "m-proxyman" do
-  version "26.5.0,260500"
+  version "26.5.1,260501"
 
   url "https://download.proxyman.com/#{version.csv.second}/Proxyman_#{version.csv.first}.dmg"
 
