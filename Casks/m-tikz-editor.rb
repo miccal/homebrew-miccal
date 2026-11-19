@@ -1,5 +1,5 @@
 cask "m-tikz-editor" do
-  version "1.2.0"
+  version "1.3.0"
 
   url "https://github.com/DominikPeters/tikz-editor/releases/download/app-v#{version}/TikZ.Editor_#{version}_aarch64.dmg"
 
