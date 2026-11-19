@@ -8,4 +8,12 @@ cask "m-setshot" do
   end
 
   app "SetShot.app"
+
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "{{staged_path}}/SetShot.app"],
+        sudo:         false,
+        must_succeed: false,
+        print_stderr: false
+  end
 end
