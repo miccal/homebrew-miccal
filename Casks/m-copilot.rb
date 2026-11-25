@@ -4,14 +4,7 @@ cask "m-copilot" do
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/Copilot-#{version.csv.first}.pkg"
 
   livecheck do
-    url "https://go.microsoft.com/fwlink/?linkid=2325114"
-    regex(%r{/([^/]+)/Copilot[._-]v?(\d+(?:\.\d+)+)\.pkg}i)
-    strategy :header_match do |headers, regex|
-      match = headers["location"]&.match(regex)
-      next if match.blank?
-
-      "#{match[2]},#{match[1]}"
-    end
+    cask "microsoft-copilot"
   end
 
   pkg "Copilot-#{version.csv.first}.pkg"
