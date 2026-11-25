@@ -1,7 +1,9 @@
 cask "m-little-snitch" do
   version "6.5.1,7310"
 
-  url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch#{"/nightly" if version.csv.second}/LittleSnitch-#{version.csv.first}#{"-nightly-(#{version.csv.second})" if version.csv.second}.dmg"
+  version_suffix1 = "/nightly" if version.csv.second
+  version_suffix2 = "-nightly-(#{version.csv.second})" if version.csv.second
+  url "https://sw-update.obdev.at/ftp/pub/Products/LittleSnitch#{version_suffix1}/LittleSnitch-#{version.csv.first}#{version_suffix2}.dmg"
 
   livecheck do
     url "https://sw-update.obdev.at/update-feeds/littlesnitch#{version.major}.plist"
@@ -11,7 +13,7 @@ cask "m-little-snitch" do
         match = item.next_element&.text&.match(regex)
         next if match.blank?
 
-        match[2] ? "#{match[1]},#{match[2]}" : match[1]
+        match.values_at(1, 2).compact_blank.join(",")
       end
     end
   end
