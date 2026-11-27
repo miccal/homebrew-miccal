@@ -1,5 +1,5 @@
 cask "m-pake" do
-  version "1.11.0"
+  version "1.12.0"
 
   url "https://pake.run/updates/mac/Pake-#{version}.dmg"
 
